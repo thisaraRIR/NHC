@@ -2926,16 +2926,17 @@ var datetimepickerFactory = function ($) {
 
 		});
 
-	// $(document).ready(function(){
-	// 	$("#datepicker").datepicker({
-	// 		onSelect: function(_date, _datepicker){
-	// 		  var myDate = new Date(_date);
-	// 		  myDate.setDate(myDate.getDate()+7);
-	// 		  return[fa]
-	// 		}
-	// 	  })
-	
-	// });
+	var date = new Date();
+	var cYear = date.getFullYear();
+	var cMonth = date.getMonth();
+	var cDate = date.getDate();
+	$(document).ready(function(){
+		$("#datetimepicker").datetimepicker({
+			minDate: new Date(cYear,cMonth,cDate),
+			maxDate: new Date(cYear,cMonth,cDate+7)
+			
+		})
+	})
 	
 
 
