@@ -2907,5 +2907,39 @@ var datetimepickerFactory = function ($) {
         // Turn this off by setting $.event.special.mousewheel.settings.adjustOldDeltas to false.
         return special.settings.adjustOldDeltas && orgEvent.type === 'mousewheel' && absDelta % 120 === 0;
     }
+	$(document).ready(function(){
+		$("#datetimepicker").datetimepicker({
+
+			beforeShowDay : function(date)
+			{
+				var day = date.getDay();
+				if (day==0)
+				{
+					return [false];
+				}
+				else
+					return [true];
+			}
+
+		
+		});
+
+		});
+
+	// $(document).ready(function(){
+	// 	$("#datepicker").datepicker({
+	// 		onSelect: function(_date, _datepicker){
+	// 		  var myDate = new Date(_date);
+	// 		  myDate.setDate(myDate.getDate()+7);
+	// 		  return[fa]
+	// 		}
+	// 	  })
+	
+	// });
+	
+
+
+
+	
 
 }));
