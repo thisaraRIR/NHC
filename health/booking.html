@@ -297,7 +297,7 @@
 									<div class="breadcrumb-nav">
 										<nav aria-label="breadcrumb">
 										  	<ol class="breadcrumb">
-										    	<li class="breadcrumb-item"><a href="demo-4.html">Home</a></li>
+										    	<li class="breadcrumb-item"><a href="health_home.html">Home</a></li>
 										    	<li class="breadcrumb-item active" aria-current="page">Online Booking</li>
 										  	</ol>
 										</nav>
@@ -346,7 +346,7 @@
 							<!-- BOOKING FORM -->
 					 		<div class="col-md-7 col-lg-8">
 				 			<div class="form-holder pc-15 mb-40">
-									<form name="bookinkform" class="row booking-form" autocomplete="off">
+									<form name="bookinkform" class="row booking-form"  action="./php/bookingForm.php">
 										<!-- Form Input -->
 						                <div class="col-lg-6">
 						                	<input type="text" name="name" class="form-control name"  placeholder="Your Name*" required> 
@@ -396,11 +396,14 @@
 						                <div class="col-md-12 mt-5 text-right">  
 						                	<button type="submit" class="btn btn-md btn-color-02 color-01-hover submit">Book Now</button> 
 						                </div>
+
+										<!--Verify Email Address-->
+										
 						                                                              
 						                <!-- Form Message -->
-						                <div class="col-md-12 booking-form-msg text-center">
+						                <!-- <div class="col-md-12 booking-form-msg text-center">
 						                	<div class="sending-msg"><span class="loading"></span></div>
-						                </div>	
+						                </div>	 -->
 																								
 									</form>	
 					 			</div>	
