@@ -2926,6 +2926,7 @@ var datetimepickerFactory = function ($) {
 
 		});
 
+
 	var date = new Date();
 	var cYear = date.getFullYear();
 	var cMonth = date.getMonth();
@@ -2937,6 +2938,7 @@ var datetimepickerFactory = function ($) {
 			
 		})
 	})
+
 	
 
 
