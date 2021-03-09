@@ -2927,12 +2927,18 @@ var datetimepickerFactory = function ($) {
 		});
 
 
-	
+	var date = new Date();
+	var cYear = date.getFullYear();
+	var cMonth = date.getMonth();
+	var cDate = date.getDate();
+	$(document).ready(function(){
+		$("#datetimepicker").datetimepicker({
+			minDate: new Date(cYear,cMonth,cDate),
+			maxDate: new Date(cYear,cMonth,cDate+7)
+			
+		})
+	})
 
-	
-	
-
-	
 	
 
 
