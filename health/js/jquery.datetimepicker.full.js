@@ -2926,16 +2926,13 @@ var datetimepickerFactory = function ($) {
 
 		});
 
-	// $(document).ready(function(){
-	// 	$("#datepicker").datepicker({
-	// 		onSelect: function(_date, _datepicker){
-	// 		  var myDate = new Date(_date);
-	// 		  myDate.setDate(myDate.getDate()+7);
-	// 		  return[fa]
-	// 		}
-	// 	  })
+
 	
-	// });
+
+	
+	
+
+	
 	
 
 
