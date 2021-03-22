@@ -6,8 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
 
-
-
 	<head>
 
 		<meta charset="utf-8">
@@ -19,7 +17,7 @@
 				
   		<!-- SITE TITLE -->
 		<title>Nature's Healing | Booking</title>
-							
+	
 		<!-- FAVICON AND TOUCH ICONS -->
 		<link rel="shortcut icon" href="images/Logo/NH Logo.png" type="image/x-icon">
 		<link rel="icon" href="images/Logo/NH Logo.png" type="image/x-icon">
@@ -356,7 +354,7 @@
 							<!-- BOOKING FORM -->
 					 		<div class="col-md-7 col-lg-8">
 				 			<div class="form-holder pc-15 mb-40">
-									<form name="bookinkform" class="row booking-form"  action="./php/bookingForm.php">
+									<form method = "post" name="bookinkform" class="row booking-form"  action="./php/bookingForm.php">
 										<!-- Form Input -->
 						                <div class="col-lg-6">
 						                	<input type="text" name="name" class="form-control name"  placeholder="Your Name*" required> 
@@ -415,7 +413,7 @@
 						                                            
 						                <!-- Form Button -->
 						                <div class="col-md-12 mt-5 text-right">  
-						                	<button type="submit" class="btn btn-md btn-color-02 color-01-hover submit">Book Now</button> 
+						                	<button type="submit" name = "submit" class="btn btn-md btn-color-02 color-01-hover submit">Book Now</button> 
 						                </div>
 
 										<!--Verify Email Address-->
@@ -711,3 +709,25 @@
 
 
 </html>	
+
+<?php  
+
+	if(isset($_POST['submit'])){
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$date = $_POST['date'];
+		$age = $_POST['age'];
+		$gender = $_POST['gender'];
+		$treatment = $_POST['treatment'];
+		$patient = $_POST['patient'];
+
+		$qry = "INSERT INTO nhc_booking VALUES (null, '$name', '$email', '$phone', '$date', '$age', '$gender', '$treatment', '$patient')";
+		if(mysqli_query($db, $qry)){
+			header('location: booking.html');
+		}else{
+			echo mysqli_error($db);
+		}
+	}
+
+?>
