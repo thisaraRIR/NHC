@@ -50,7 +50,7 @@
 	<link href="css/owl.carousel.min.css" rel="stylesheet">
 	<link href="css/flexslider.css" rel="stylesheet">
 	<link href="css/owl.theme.default.min.css" rel="stylesheet">
-	<link href="css/jquery.datetimepicker.min.css" rel="stylesheet">
+	<!-- <link href="css/jquery.datetimepicker.min.css" rel="stylesheet"> -->
 
 	<!-- TEMPLATE CSS -->
 	<!-- <link href="css/gold-theme.css" rel="stylesheet"> -->
@@ -662,7 +662,7 @@
 	<script src="js/contact-form.js"></script>
 	<script src="js/comment-form.js"></script>
 	<script src="js/booking-form.js"></script>
-	<script src="js/jquery.datetimepicker.full.js"></script>
+	<!-- <script src="js/jquery.datetimepicker.full.js"></script> -->
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 
