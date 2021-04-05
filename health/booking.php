@@ -1,5 +1,5 @@
 <?php
-	include 'database/connection.php';
+include 'database/connection.php';
 ?>
 <!DOCTYPE html>
 <!-- Spa Magic - Spa & Beauty Salon Landing Page Template design design by Jthemes (http://www.jthemes.net) -->
@@ -9,77 +9,75 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
 
-	<head>
+<head>
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="author" content="Jthemes"/>	
-		<meta name="description" content="Spa Magic - Spa, Hair & Beauty Salon Landing Page Template"/>
-		<meta name="keywords" content="Jthemes, Beauty, Cosmetic, Girly, Health, Healthy Care, Massage, Make Up, Salon, Spa, Skincare, Wellness">	
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-				
-  		<!-- SITE TITLE -->
-		<title>Nature's Healing | Booking</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="Jthemes" />
+	<meta name="description" content="Spa Magic - Spa, Hair & Beauty Salon Landing Page Template" />
+	<meta name="keywords" content="Jthemes, Beauty, Cosmetic, Girly, Health, Healthy Care, Massage, Make Up, Salon, Spa, Skincare, Wellness">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Jquery Calendar -->
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	<!-- SITE TITLE -->
+	<title>Nature's Healing | Booking</title>
+
+	<!-- FAVICON AND TOUCH ICONS -->
+	<link rel="shortcut icon" href="images/Logo/NH Logo.png" type="image/x-icon">
+	<link rel="icon" href="images/Logo/NH Logo.png" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/Logo/NH Logo.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/Logo/NH Logo.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/Logo/NH Logo.png">
+	<link rel="apple-touch-icon" href="images/Logo/NH Logo.png">
+	<link rel="icon" href="images/Logo/NH Logo.png" type="image/x-icon">
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+	<!-- BOOTSTRAP CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- FONT ICONS -->
+	<link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/flaticon.css" rel="stylesheet">
+
+	<!-- PLUGINS STYLESHEET -->
+	<link href="css/menu.css" rel="stylesheet">
+	<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+	<link href="css/tweenmax.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/flexslider.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<!-- <link href="css/jquery.datetimepicker.min.css" rel="stylesheet"> -->
+
+	<!-- TEMPLATE CSS -->
+	<!-- <link href="css/gold-theme.css" rel="stylesheet"> -->
+	<link href="css/pink-theme.css" rel="stylesheet">
+	<!-- <link href="css/rose-theme.css" rel="stylesheet"> -->
+	<!-- <link href="css/silk-theme.css" rel="stylesheet"> -->
+
+	<!-- RESPONSIVE CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+
+
+	<!---->
+	<!-- <link href="./css/jquery.datetimepicker.min.css" rel="stylesheet">
+		<script src="./js/jquery.datetimepicker.full.js"></script> -->
+	<script src="./js/jquery.appear.js"></script>
+	<script>
+
+	</script>
 	
-		<!-- FAVICON AND TOUCH ICONS -->
-		<link rel="shortcut icon" href="images/Logo/NH Logo.png" type="image/x-icon">
-		<link rel="icon" href="images/Logo/NH Logo.png" type="image/x-icon">
-		<link rel="apple-touch-icon" sizes="152x152" href="images/Logo/NH Logo.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="images/Logo/NH Logo.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="images/Logo/NH Logo.png">
-		<link rel="apple-touch-icon" href="images/Logo/NH Logo.png">
-		<link rel="icon" href="images/Logo/NH Logo.png" type="image/x-icon">
-
-		<!-- GOOGLE FONTS -->
-		<link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">	
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-
-		<!-- BOOTSTRAP CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-				
-		<!-- FONT ICONS -->
-		<link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">		
-		<link href="css/flaticon.css" rel="stylesheet">
-
-		<!-- PLUGINS STYLESHEET -->
-		<link href="css/menu.css" rel="stylesheet">	
-		<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
-		<link href="css/tweenmax.css" rel="stylesheet">	
-		<link href="css/magnific-popup.css" rel="stylesheet">	
-		<link href="css/owl.carousel.min.css" rel="stylesheet">
-		<link href="css/flexslider.css" rel="stylesheet">
-		<link href="css/owl.theme.default.min.css" rel="stylesheet">
-		<link href="css/jquery.datetimepicker.min.css" rel="stylesheet">
-	
-		<!-- TEMPLATE CSS -->
-		<!-- <link href="css/gold-theme.css" rel="stylesheet"> -->
-		<link href="css/pink-theme.css" rel="stylesheet">
-		<!-- <link href="css/rose-theme.css" rel="stylesheet"> -->
-		<!-- <link href="css/silk-theme.css" rel="stylesheet"> -->
-
-		<!-- RESPONSIVE CSS -->
-		<link href="css/responsive.css" rel="stylesheet">
-
-
-		<!---->
-		<link href="./css/jquery.datetimepicker.min.css" rel="stylesheet">
-		<script src="./js/jquery.datetimepicker.full.js"></script>
-		<script src="./js/jquery.appear.js"></script>
-		<script>
-		
-		</script>
-		
-	
-	</head>
-
-
-
+</head>
 
 <body>
-
-
-
 
 	<!-- PRELOADER SPINNER
 		============================================= -->
@@ -113,8 +111,7 @@
 
 				<!-- MOBILE HEADER -->
 				<div class="wsmobileheader clearfix">
-					<span class="smllogo"><img src="images/Logo/NH-web-logo-gold.png" width="170" height="50"
-							alt="mobile-logo" /></span>
+					<span class="smllogo"><img src="images/Logo/NH-web-logo-gold.png" width="170" height="50" alt="mobile-logo" /></span>
 					<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
 				</div>
 
@@ -126,12 +123,8 @@
 
 						<!-- LOGO IMAGE -->
 						<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 340 x 100 pixels) -->
-						<div class="desktoplogo"><a href="#booking-page" class="logo-black"><img
-									src="images/Logo/NH-web-logo-gold.png" width="170" height="50"
-									alt="header-logo"></a></div>
-						<div class="desktoplogo"><a href="#booking-page" class="logo-white"><img
-									src="images/Logo/NH-web-logo-gold.png" width="170" height="50"
-									alt="header-logo"></a></div>
+						<div class="desktoplogo"><a href="#booking-page" class="logo-black"><img src="images/Logo/NH-web-logo-gold.png" width="170" height="50" alt="header-logo"></a></div>
+						<div class="desktoplogo"><a href="#booking-page" class="logo-white"><img src="images/Logo/NH-web-logo-gold.png" width="170" height="50" alt="header-logo"></a></div>
 
 
 						<!-- MAIN MENU -->
@@ -354,15 +347,15 @@
 						<!-- BOOKING FORM -->
 						<div class="col-md-7 col-lg-8">
 							<div class="form-holder pc-15 mb-40">
-								<form method="POST" action="php/bookingForm.php" autocomplete=off>
-									
+								<form method="POST" id = "bookingDetails" action="php/bookingForm.php" autocomplete=off>
+
 									<div class="form-row">
 										<!-- Form Input -->
 										<div class="form-group col-md-6">
 											<label for="inputName">Name*</label>
 											<input type="text" name="name" class="form-control name" placeholder="Your Name*" required>
 										</div>
-							
+
 										<!-- Form Input -->
 										<div class="form-group col-md-6">
 											<label for="inputEmail">Email*</label>
@@ -375,22 +368,24 @@
 											<label for="inputPhone">Phone*</label>
 											<input type="tel" name="phone" class="form-control phone" placeholder="Phone Number*" required>
 										</div>
-							
+
 										<!-- Form Input -->
 										<!-- Form Input -->
 										<div class="form-group col-md-6">
 											<label for="inputAge">Age*</label>
 											<input type="age" name="age" class="form-control age" placeholder="Age*" required>
 										</div>
-										
+
 									</div>
+
 									<div class="form-row">
 										<div class="form-group col-md-12">
 											<label for="inputDate">Appointment Date*</label>
-											<input id="datetimepicker" type="text" name="date" class="form-control date" placeholder="Appointment Date*"
-											required>
-										</div>	
+											<input id="datepicker" type="text" name="date" class="form-control date" placeholder="Date*" required>
+										</div>
 									</div>
+
+									
 									<div class="form-row">
 										<!--Form Select-->
 										<div class="form-group col-md-12">
@@ -417,7 +412,7 @@
 									<div class="form-row">
 										<!-- Form Select -->
 										<div class="form-group col-md-12">
-											<label for="inputAge">Have You Visited Us Before?*S</label>
+											<label for="inputAge">Have You Visited Us Before?*</label>
 											<select id="inlineFormCustomSelect3" name="patient" class="custom-select patient" required>
 												<option value="">Have You Visited Us Before?*</option>
 												<option>New Patient</option>
@@ -426,14 +421,15 @@
 											</select>
 										</div>
 									</div>
-							
-							
-							
+
 									<!-- Form Button -->
 									<div class="col-md-12 mt-5 text-right">
-										<input type="submit" class="btn btn-md btn-color-02 color-01-hover submit" value="Book Now">
+										<input type="submit" class="btn btn-md btn-color-02 color-01-hover submit" value="Book Now" name = "book">
 									</div>
-							
+
+									<div id="error_message" class="ajax_response" style="float:left"></div>
+									<div id="success_message" class="ajax_response" style="float:left"></div>
+
 								</form>
 							</div>
 						</div> <!-- END BOOKING FORM -->
@@ -454,8 +450,7 @@
 								<div class="cbox-1 mb-30">
 									<h5 class="h5-sm txt-color-01">Contact Info</h5>
 									<p class="p-md txt-color-05"><span>Phone :</span> +94 77 0728767</p>
-									<p class="p-md txt-color-05"><span>Email :</span> <a
-											href="mailto:yourdomain.ceylon@mail.com">natureshealing.ceylon@gmail.com</a>
+									<p class="p-md txt-color-05"><span>Email :</span> <a href="mailto:yourdomain.ceylon@mail.com">natureshealing.ceylon@gmail.com</a>
 									</p>
 									<!-- <p class="p-md txt-color-05"><span>Skype :</span> <a href="tel:123456789">support.spamagic</a></p> -->
 								</div>
@@ -608,18 +603,12 @@
 
 								<!-- Instagram Images -->
 								<ul class="text-center clearfix">
-									<li><a href="#" target="_blank"><img class="insta-img"
-												src="images/instagram/img-01.jpg" alt="insta-img"></a></li>
-									<li><a href="#" target="_blank"><img class="insta-img"
-												src="images/instagram/img-02.jpg" alt="insta-img"></a></li>
-									<li><a href="#" target="_blank"><img class="insta-img"
-												src="images/instagram/img-03.jpg" alt="insta-img"></a></li>
-									<li><a href="#" target="_blank"><img class="insta-img"
-												src="images/instagram/img-04.jpg" alt="insta-img"></a></li>
-									<li><a href="#" target="_blank"><img class="insta-img"
-												src="images/instagram/img-05.jpg" alt="insta-img"></a></li>
-									<li><a href="#" target="_blank"><img class="insta-img"
-												src="images/instagram/img-06.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-01.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-02.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-03.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-04.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-05.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-06.jpg" alt="insta-img"></a></li>
 								</ul>
 
 							</div>
@@ -690,7 +679,7 @@
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/jquery.scrollto.js"></script>
 	<script src="js/menu.js"></script>
-	<script src="js/materialize.js"></script>
+	<!-- <script src="js/materialize.js"></script> -->
 	<script src="js/tweenmax.min.js"></script>
 	<script src="js/slideshow.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
@@ -702,9 +691,10 @@
 	<script src="js/contact-form.js"></script>
 	<script src="js/comment-form.js"></script>
 	<script src="js/booking-form.js"></script>
-	<script src="js/jquery.datetimepicker.full.js"></script>
+	<!-- <script src="js/jquery.datetimepicker.full.js"></script> -->
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/datepicker.js"></script>
 
 	<!-- Custom Script -->
 	<script src="js/custom.js"></script>
@@ -734,7 +724,5 @@
 
 
 </body>
-
-
 
 </html>

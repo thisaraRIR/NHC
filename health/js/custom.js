@@ -436,7 +436,7 @@ $(document).ready(function () {
 	/*	DateTimePicker
 	/*----------------------------------------------------*/
 
-	$('#datetimepicker').datetimepicker();
+	// $('#datetimepicker').datetimepicker();
 
 
 	/*----------------------------------------------------*/
