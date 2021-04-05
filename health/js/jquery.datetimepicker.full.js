@@ -1848,9 +1848,9 @@ var datetimepickerFactory = function ($) {
 						var minTimeMinutesOfDay = 9 * 60;
 						if (options.minTime !== false) {
 							var t = _xdsoft_datetime.strtotime(options.minTime);
-							minTimeMinutesOfDay = 60 * t.getHours() + t.getMinutes();		
-						
-							
+							minTimeMinutesOfDay = 60 * t.getHours() + t.getMinutes();
+
+
 						}
 
 						var maxTimeMinutesOfDay = 17 * 60;
@@ -2910,8 +2910,10 @@ var datetimepickerFactory = function ($) {
 		// Turn this off by setting $.event.special.mousewheel.settings.adjustOldDeltas to false.
 		return special.settings.adjustOldDeltas && orgEvent.type === 'mousewheel' && absDelta % 120 === 0;
 	}
+
+	//Block Sundays from the calendar
 	$(document).ready(function () {
-		$("#datetimepicker").datetimepicker({
+		$("#datepicker").datepicker({
 
 			beforeShowDay: function (date) {
 				var day = date.getDay();
@@ -2921,13 +2923,10 @@ var datetimepickerFactory = function ($) {
 				else
 					return [true];
 			}
-
-
-    });
-git 
+		});
 	});
 
-
+	//Only available 7 days from the current date
 	var date = new Date();
 	var cYear = date.getFullYear();
 	var cMonth = date.getMonth();
@@ -2938,19 +2937,7 @@ git
 			maxDate: new Date(cYear, cMonth, cDate + 7)
 
 		})
-	})
-
-    var date = new Date();
-    var cYear = date.getFullYear();
-    var cMonth = date.getMonth();
-    var cDate = date.getDate();
-    $(document).ready(function () {
-        $("#datetimepicker").datetimepicker({
-            minDate: new Date(cYear, cMonth, cDate),
-            maxDate: new Date(cYear, cMonth, cDate + 7)
-
-        })
-    })
+	});
 
 }));
 

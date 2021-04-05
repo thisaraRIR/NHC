@@ -660,8 +660,7 @@
 									</li>
 								</ul>
 							</div>
-
-
+							
 						</div> <!-- End row -->
 					</div> <!-- END BOTTOM FOOTER -->
 
