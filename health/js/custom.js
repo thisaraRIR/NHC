@@ -1,5 +1,33 @@
 // JavaScript Document
 
+/*----------------------------------------------------*/
+	/*	Login Form Validation
+	/*----------------------------------------------------*/
+
+	$(".login-form").validate({
+		rules: {
+	
+			email: {
+				required: true,
+				email: true,
+			},
+			password: {
+				required: true,
+				minlength: 6,
+			}
+		},
+		messages: {
+			
+			email: {
+				required: "Email address is required",
+				email: "Your email address must be in the format of name@domain.com"
+			},
+			message: {
+				required: "Password is required"
+			},
+		}
+	});
+
 
 $(window).on('load', function () {
 
@@ -408,7 +436,7 @@ $(document).ready(function () {
 	/*	DateTimePicker
 	/*----------------------------------------------------*/
 
-	$('#datetimepicker').datetimepicker();
+	// $('#datetimepicker').datetimepicker();
 
 
 	/*----------------------------------------------------*/
