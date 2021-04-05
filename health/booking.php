@@ -7,6 +7,7 @@ include 'database/connection.php';
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
+<!--Booking php File-->
 <html lang="en">
 
 <head>
