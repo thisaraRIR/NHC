@@ -3,6 +3,34 @@
 <h3 style="font-size:40px; color:black; text-align: center; background-color: white">
 
 <?php
+// $treatment  = $_REQUEST["treatment"];
+// $patient  = $_REQUEST["patient"];
+// $date = $_REQUEST["date"];
+// $name  = $_REQUEST["name"];
+// $email = $_REQUEST["email"];
+// $phone  = $_REQUEST["phone"];
+// $age   = $_REQUEST["age"];
+// $to    = $email; // ENTER YOUR EMAIL ADDRESS
+// if (isset($email) && isset($name) && isset($age)) {
+//     $email_subject = "NHC Appointment Booked"; // ENTER YOUR EMAIL SUBJECT
+// 		$headers = "MIME-Version: 1.0" . "\r\n";
+// $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+// $headers .= "From: ".$name." <".$email.">\r\n"."Reply-To: ".$email."\r\n" ;
+// $age    = "Department: $treatment <br/> Patient: $patient <br/> Appointment Date: $date <br/> Patient Name: $name <br/> Patient Email: $email <br/> Patient Phone Number: $phone <br/> Message: $msg";
+	
+//    $mail =  mail($to, $email_subject, $age, $headers);
+//   if($mail)
+// 	{
+// 		echo 'success';
+// 	}
+
+// else
+// 	{
+// 		echo 'failed';
+// 	}
+// }
+
+/* Send data to the database 'nhc'*/
 
 //database connection
 include ('../database/connection.php');

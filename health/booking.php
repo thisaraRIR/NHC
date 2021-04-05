@@ -649,8 +649,7 @@ include 'database/connection.php';
 									</li>
 								</ul>
 							</div>
-
-
+							
 						</div> <!-- End row -->
 					</div> <!-- END BOTTOM FOOTER -->
 
