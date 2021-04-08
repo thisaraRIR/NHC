@@ -19,9 +19,9 @@ include 'database/connection.php';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- Jquery Calendar -->
-	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 	<!-- SITE TITLE -->
 	<title>Nature's Healing | Booking</title>
@@ -381,7 +381,7 @@ include 'database/connection.php';
 									<div class="form-row">
 										<div class="form-group col-md-12">
 											<label for="inputDate">Appointment Date*</label>
-											<input id="datepicker" type="text" name="date" class="form-control date" placeholder="Date*" required>
+											<input id="date" type="text" name="date" class="form-control date" placeholder="Date*" required>
 										</div>
 									</div>
 
@@ -672,8 +672,8 @@ include 'database/connection.php';
 
 	<!-- EXTERNAL SCRIPTS
 		============================================= -->
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script> 
+	<script src="js/bootstrap.min.js"></script> 
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.easing.js"></script>
 	<script src="js/jquery.appear.js"></script>
@@ -694,7 +694,33 @@ include 'database/connection.php';
 	<!-- <script src="js/jquery.datetimepicker.full.js"></script> -->
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/datepicker.js"></script>
+	<script>
+	// $(document).ready(function () {
+    //  	$("#date").datepicker({
+    //  	});
+    // });
+
+	 var date = new Date();
+     var cYear = date.getFullYear();
+     var cMonth = date.getMonth();
+     var cDate = date.getDate();
+     $(document).ready(function() {
+         $("#date").datepicker({
+             minDate: new Date(cYear, cMonth, cDate + 2),
+            //  maxDate: new Date(cYear, cMonth, cDate + 2),
+
+			 beforeShowDay: function (date) {
+     			var day = date.getDay();
+     			if (day == 0) {
+     				return [false];
+     			}
+     			else
+     				return [true];
+     		}
+
+         })
+     });
+	</script>
 
 	<!-- Custom Script -->
 	<script src="js/custom.js"></script>
