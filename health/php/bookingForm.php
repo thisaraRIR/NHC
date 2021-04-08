@@ -37,6 +37,8 @@ include ('../database/connection.php');
 
 //INSERT data into mysql
 
+
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
@@ -45,9 +47,10 @@ $age = $_POST['age'];
 $gender = $_POST['gender'];
 $treatment = $_POST['treatment'];
 $patient = $_POST['patient'];
+$time = $_POST['time'];
 
 
-$sql = "INSERT INTO appointment(name, email, phone, date, age, gender, treatment, status) VALUES('$name', '$email', '$phone', '$date', '$age', '$gender', '$treatment', '$patient')";
+$sql = "INSERT INTO appointment(name, email, phone, date, age, gender, treatment, status, time) VALUES('$name', '$email', '$phone', '$date', '$age', '$gender', '$treatment', '$patient', '$time')";
 
 if(mysqli_query($conn, $sql)){
     $_SESSION['message1'] = "<h1>Awesome!</h1>"; 
