@@ -21,8 +21,8 @@ include 'database/connection.php';
 
 	<!-- Jquery Calendar -->
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 	<!-- SITE TITLE -->
 	<title>Nature's Healing | Booking</title>
@@ -75,7 +75,20 @@ include 'database/connection.php';
 	<script>
 
 	</script>
-	
+
+	<style>
+		.msg {
+			margin: 30px auto;
+			padding: 10px;
+			border-radius: 5px;
+			color: #3c763d;
+			background: #dff0d8;
+			border: 1px solid #3c763d;
+			width: 50%;
+			text-align: center;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -320,6 +333,7 @@ include 'database/connection.php';
 				<div class="container">
 
 
+
 					<!-- SECTION TITLE -->
 					<div class="row">
 						<div class="col-lg-10 offset-lg-1">
@@ -348,7 +362,7 @@ include 'database/connection.php';
 						<!-- BOOKING FORM -->
 						<div class="col-md-7 col-lg-8">
 							<div class="form-holder pc-15 mb-40">
-								<form method="POST" id = "bookingDetails" action="php/bookingForm.php" autocomplete=off>
+								<form method="POST">
 
 									<div class="form-row">
 										<!-- Form Input -->
@@ -386,7 +400,7 @@ include 'database/connection.php';
 										</div>
 									</div>
 
-									
+
 									<div class="form-row">
 										<!--Form Select-->
 										<div class="form-group col-md-12">
@@ -410,6 +424,7 @@ include 'database/connection.php';
 											</select>
 										</div>
 									</div>
+
 									<div class="form-row">
 										<!-- Form Select -->
 										<div class="form-group col-md-12">
@@ -425,7 +440,7 @@ include 'database/connection.php';
 
 									<!-- Form Button -->
 									<div class="col-md-12 mt-5 text-right">
-										<input type="submit" class="btn btn-md btn-color-02 color-01-hover submit" value="Book Now" name = "book">
+										<input type="submit" class="btn btn-md btn-color-02 color-01-hover submit" value="Book Now" name="book">
 									</div>
 
 									<div id="error_message" class="ajax_response" style="float:left"></div>
@@ -434,7 +449,6 @@ include 'database/connection.php';
 								</form>
 							</div>
 						</div> <!-- END BOOKING FORM -->
-
 
 						<!-- CONTACTS INFO -->
 						<div class="col-md-5 col-lg-4">
@@ -650,7 +664,7 @@ include 'database/connection.php';
 									</li>
 								</ul>
 							</div>
-							
+
 						</div> <!-- End row -->
 					</div> <!-- END BOTTOM FOOTER -->
 
@@ -673,8 +687,8 @@ include 'database/connection.php';
 
 	<!-- EXTERNAL SCRIPTS
 		============================================= -->
-	<script src="js/jquery-3.4.1.min.js"></script> 
-	<script src="js/bootstrap.min.js"></script> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.easing.js"></script>
 	<script src="js/jquery.appear.js"></script>
@@ -696,31 +710,30 @@ include 'database/connection.php';
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script>
-	// $(document).ready(function () {
-    //  	$("#date").datepicker({
-    //  	});
-    // });
+		// $(document).ready(function () {
+		//  	$("#date").datepicker({
+		//  	});
+		// });
 
-	 var date = new Date();
-     var cYear = date.getFullYear();
-     var cMonth = date.getMonth();
-     var cDate = date.getDate();
-     $(document).ready(function() {
-         $("#date").datepicker({
-             minDate: new Date(cYear, cMonth, cDate + 2),
-            //  maxDate: new Date(cYear, cMonth, cDate + 2),
+		var date = new Date();
+		var cYear = date.getFullYear();
+		var cMonth = date.getMonth();
+		var cDate = date.getDate();
+		$(document).ready(function() {
+			$("#date").datepicker({
+				minDate: new Date(cYear, cMonth, cDate + 2),
+				//  maxDate: new Date(cYear, cMonth, cDate + 2),
 
-			 beforeShowDay: function (date) {
-     			var day = date.getDay();
-     			if (day == 0) {
-     				return [false];
-     			}
-     			else
-     				return [true];
-     		}
+				beforeShowDay: function(date) {
+					var day = date.getDay();
+					if (day == 0) {
+						return [false];
+					} else
+						return [true];
+				}
 
-         })
-     });
+			})
+		});
 	</script>
 
 	<!-- Custom Script -->
@@ -747,9 +760,43 @@ include 'database/connection.php';
 		</script>
 		-->
 
-
-
-
 </body>
 
 </html>
+
+<!-- Insert Data to database -->
+<?php
+
+if (isset($_POST['book'])) {
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$phone = $_POST['phone'];
+	$date = date('Y-m-d', strtotime($_POST['date']));
+	$age = $_POST['age'];
+	$gender = $_POST['gender'];
+	$treatment = $_POST['treatment'];
+	$patient = $_POST['patient'];
+	// $time = $_POST['time'];
+
+	$sql = "INSERT INTO appointment(name, email, phone, date, age, gender, treatment, patient) VALUES('$name', '$email', '$phone', '$date', '$age', '$gender', '$treatment', '$patient')";
+
+	if (mysqli_query($conn, $sql)) {
+		// $_SESSION['message1'] = "<h1>Awesome!</h1>"; 
+		// $_SESSION['message2'] = "<h3>Your booking has been confirmed.</h3>";
+		$_SESSION['message'] = "Your Booking Has Been Confirmed...";
+	} else {
+		echo mysqli_error($conn);
+	}
+}
+
+?>
+
+<!-- Display booking success message -->
+<?php if (isset($_SESSION['message'])) : ?>
+	<div class="msg">
+	<?php
+		echo $_SESSION['message'];
+		unset($_SESSION['message']);
+	?>
+</div>
+<?php endif ?>
