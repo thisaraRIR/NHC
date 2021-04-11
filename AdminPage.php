@@ -12,7 +12,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
  
- <title>ADMIN PANEL</title>
+ <title>ADMIN PAGE</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -21,6 +21,7 @@
   <!-- Custom styles for this template-->
   <link rel="stylesheet" type="text/css" href="css/sb-admin-2.min.css"/>
 
+  <!-- Table styles -->
   <style>
   #booking {
     font-family: Arial, Helvetica, sans-serif;
@@ -132,61 +133,66 @@
         </nav>
         <!-- End of Topbar -->
 
-        <!-- Retrieve Booking Details | DOCTOR,ADMIN-->
+        <!-- Modify Booking Details | ADMIN -->
         <center><br><h3>Patient Bookings</h3><br>
-									<!-- <table class="table" style = "width: 90%" border="1" > -->
-                  <table id = "booking" style = "width: 90%" border="1" >
-									<thead class="thead-dark">
-									<tr class="bg-primary">
-										<th>ID</th>
-										<th>NAME</th>
-										<th>EMAIL</th>
-										<th>PHONE</th>
-										<th>AGE</th>
-										<th>GENDER</th>
-										<th>TREATMENT</th>
-										<th>PATIENT</th>
-                    <th>DATE</th>
-                    <th>TIME</th>
-										</tr></center></thead>
+        <table id = "booking" style = "width: 90%" border="1" >
+		    <thead class="thead-dark">
+				<tr class="bg-primary">
+				    <th>ID</th>
+					<th>NAME</th>
+					<th>EMAIL</th>
+					<th>PHONE</th>
+				  <th>AGE</th>
+					<th>GENDER</th>
+					<th>TREATMENT</th>
+					<th>PATIENT</th>
+          <th>DATE</th>
+          <th>TIME</th>
+          <th>EDIT</th>
+          <th>DELETE</th>
+				</tr></center></thead>
 
-									<?php  
+					<?php  
 
-									$i = 1;
-									$sql = "select * from appointment";
-									$run = $conn -> query($sql);
-									if($run -> num_rows > 0){
-									while($row = $run -> fetch_assoc()){
-									$id = $row['id'];
-									?>
+					$i = 1;
+					$sql = "select * from appointment";
+					$run = $conn -> query($sql);
+					if($run -> num_rows > 0){
+					while($row = $run -> fetch_assoc()){
+					$id = $row['id'];
+					?>
 
-									<tr>
+					<tr>
 									
-										<td><?php echo $i++ ?></td>
-										<td><?php echo $row['name'] ?></td>
-										<td><?php echo $row['email'] ?></td>
-										<td><?php echo $row['phone'] ?></td>
-										<td><?php echo $row['age'] ?></td>
-										<td><?php echo $row['gender'] ?></td>
-										<td><?php echo $row['treatment'] ?></td>
-										<td><?php echo $row['patient'] ?></td>
-                    <td><?php echo $row['date'] ?></td>
-                    <td><?php echo $row['time'] ?></td>
-										
-									</tr>
-									<?php     
+					<td><?php echo $i++ ?></td>
+					<td><?php echo $row['name'] ?></td>
+					<td><?php echo $row['email'] ?></td>
+					<td><?php echo $row['phone'] ?></td>
+					<td><?php echo $row['age'] ?></td>
+					<td><?php echo $row['gender'] ?></td>
+					<td><?php echo $row['treatment'] ?></td>
+					<td><?php echo $row['patient'] ?></td>
+          <td><?php echo $row['date'] ?></td>
+          <td><?php echo $row['time'] ?></td>
+          <td>
+				      <a href="#?edit=<?php echo $row['id']; ?>" class="edit_btn" ><i class="fas fa-edit" style="color:grey"></i></a>
+			    </td>
+			    <td>
+				      <a href="#?del=<?php echo $row['id']; ?>" class="del_btn"><i class="fa fa-trash" style="color:grey"></i></a>
+			    </td>	
+					</tr>
+						<?php     
   									   
-  									?> 
+  					    ?> 
 
-									<?php  
+						<?php  
 
-									}
-								}
+						}
+					}
 
-								?>
+					?>
 
-								</table></center>
-
+					</table></center>
     </div>
     <!-- End of Content Wrapper -->
 
