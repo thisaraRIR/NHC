@@ -175,10 +175,10 @@
           <td><?php echo $row['date'] ?></td>
           <td><?php echo $row['time'] ?></td>
           <td>
-				      <a href="#?edit=<?php echo $row['id']; ?>" class="edit_btn" ><i class="fas fa-edit" style="color:grey"></i></a>
+              <a href="AdminEdit.php?id=<?php echo $id; ?>"><i class="fas fa-edit" style="color:grey"></i></a>
 			    </td>
 			    <td>
-				      <a href="#?del=<?php echo $row['id']; ?>" class="del_btn"><i class="fa fa-trash" style="color:grey"></i></a>
+              <a href="deleteAdmin.php?id=<?php echo $id; ?>" onclick="return confirm('Are you sure?')"><i class="fa fa-trash" style="color:grey"></i></a>
 			    </td>	
 					</tr>
 						<?php     
