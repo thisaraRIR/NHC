@@ -1,5 +1,11 @@
-<?php include 'health/database/connection.php'?>
-
+<?php include 'connection.php'?>
+<?php
+    session_start();
+    if(!isset($_SESSION['email'])){
+        header("location: login.php");
+    }
+  
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,11 +21,11 @@
  <title>ADMIN PAGE</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   
   <!-- Custom styles for this template-->
-  <link rel="stylesheet" type="text/css" href="css/sb-admin-2.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/sb-admin-2.min.css"/>
 
   <!-- Table styles -->
   <style>
@@ -61,7 +67,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="adminPanel.php">
         <div class="sidebar-brand-icon">
-        <img src="images/Logo/NH Logo white colour.png" width="80px" height="80px"></img>
+        <img src="../images/Logo/NH Logo white colour.png" width="80px" height="80px"></img>
         </div>
       </a>
 
@@ -80,15 +86,15 @@
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="adminPanel.php">
-          <i class="fa fa-calendar"></i>
+        <a class="nav-link collapsed" href="adminDoc.php">
+          <i class="fas fa-stethoscope"></i>
           <span>Dashboard</span>
         </a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="AdminPage.php">
-          <i class="fa fa-calendar"></i>
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="adminView.php">
+          <i class="fas fa-user-cog"></i>
           <span>Admin</span>
         </a>
       </li>
@@ -117,15 +123,12 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
-                <img class="img-profile rounded-circle" src="images/Logo/NH Logo icon brand.jpg">
+                <img class="img-profile rounded-circle" src="../images/Logo/NH Logo icon brand.jpg">
               </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="logout.php?logout" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
+            </li>
+             <!--logout btn-->
+            <li class="nav-item dropdown no-arrow" style="padding-top:15px; ">
+              <a href="logout.php?logout" class="btn btn-outline-secondary" role="button" aria-pressed="true"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout</a>
             </li>
 
           </ul>
@@ -175,10 +178,10 @@
           <td><?php echo $row['date'] ?></td>
           <td><?php echo $row['time'] ?></td>
           <td>
-              <a href="AdminEdit.php?id=<?php echo $id; ?>"><i class="fas fa-edit" style="color:grey"></i></a>
+				      <a href="#?edit=<?php echo $row['id']; ?>" class="edit_btn" ><i class="fas fa-edit" style="color:grey"></i></a>
 			    </td>
 			    <td>
-              <a href="deleteAdmin.php?id=<?php echo $id; ?>" onclick="return confirm('Are you sure?')"><i class="fa fa-trash" style="color:grey"></i></a>
+				      <a href="#?del=<?php echo $row['id']; ?>" class="del_btn"><i class="fa fa-trash" style="color:grey"></i></a>
 			    </td>	
 					</tr>
 						<?php     
@@ -205,7 +208,7 @@
   </a>
 
   <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -217,19 +220,18 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.php">Logout</a>
+          <a class="btn btn-primary" href="logout.php?logout">Logout</a>
         </div>
-
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 </body>
 
