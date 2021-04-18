@@ -1,5 +1,6 @@
 <?php 
 
+    //DB connection
     $host = 'localhost';
     $user = 'root';
     $pass = '';
@@ -11,8 +12,9 @@
       die('error in db' . mysqli_error($conn));
     }else{
 
+    //get data to edit form
     $id = $_GET['id'];
-	$sql = "select * from appointment where id = $id";
+	  $sql = "select * from appointment where id = $id";
 		$run = $conn -> query($sql);
 		if($run -> num_rows > 0){
 			while($row = $run -> fetch_assoc()){
@@ -23,10 +25,30 @@
 				$age = $row['age'];
 				$gender = $row['gender'];
 				$treatment = $row['treatment'];
-                $patient = $row['patient'];
+        $patient = $row['patient'];
 				$time = $row['time'];
 		}
 	}
+}
+
+    //update data
+    if (isset($_POST['update'])) {
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $phone = $_POST['phone'];
+      // $date = date('Y-m-d', strtotime($_POST['date']));
+      $age = $_POST['age'];
+      $gender = $_POST['gender'];
+      $treatment = $_POST['treatment'];
+      $patient = $_POST['patient'];
+      $time = $_POST['time'];
+
+    $sql = "UPDATE appointment SET name = '$name', email = '$email', phone = '$phone', age = '$age', gender = '$gender', treatment = '$treatment', patient = '$patient', time = '$time'  WHERE id = $id";
+    if(mysqli_query($conn, $sql)){
+      header('location: adminPage.php');
+    }else{
+      echo mysqli_error($conn);
+    }
 }
 
 ?>
@@ -248,13 +270,12 @@
 
 <div class="col-md-7 col-lg-8" style = "margin: 0 auto";>
     <div class="form-holder pc-15 mb-40">
-        <form action="" method="POST" id = "bookingDetails" >
-        <!-- action="php/bookingForm.php" autocomplete=off -->
-
+        <form method="POST">
+       
             <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputID">ID*</label>
-                <input type="text" name="id" class="form-control id" value = "<?php echo $id; ?>">
+                <input type="text" name="id" class="form-control id" value = "<?php echo $id; ?>" disabled>
             </div>
             </div>
 
@@ -399,10 +420,8 @@
                     </select>
                 </div>
             </div>
-
-            <div class="form-group col-md-6">  
-                <input type="submit" name="update" value="Edit"/>
-            </div>
+ 
+            <button class="btn btn-primary" type="submit" name="update" >update</button>
 
         </form>
     </div>
@@ -411,22 +430,3 @@
 </body>
 
 </html>
-
-<?php  
-
-	if(isset($_POST['update'])){
-    $id = $_POST['id'];
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$phone = $_POST['phone'];
-    // $date = $_POST['date'];
-		$age = $_POST['age'];
-		$gender = $_POST['gender'];
-		$treatment = $_POST['treatment'];
-		$patient = $_POST['patient'];
-    $time = $_POST['time'];
-
-		$qry = "UPDATE appointment SET name = '$name', email = '$email', phone = '$phone', age = '$age', gender = '$gender', treatment = '$treatment', patient = '$patient', time = '$time'  WHERE id = $id";
-	}
-
-?>
