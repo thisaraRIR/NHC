@@ -138,7 +138,7 @@
         <table id = "booking" style = "width: 90%" border="1" >
 		    <thead class="thead-dark">
 				<tr class="bg-primary">
-				    <th>ID</th>
+				  <th>ID</th>
 					<th>NAME</th>
 					<th>EMAIL</th>
 					<th>PHONE</th>
