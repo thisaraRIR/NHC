@@ -1,6 +1,32 @@
 <?php
 include 'database/connection.php';
 ?>
+<!-- Insert Data to database -->
+<?php
+
+if (isset($_POST['book'])) {
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$phone = $_POST['phone'];
+	$date = date('Y-m-d', strtotime($_POST['date']));
+	$age = $_POST['age'];
+	$gender = $_POST['gender'];
+	$treatment = $_POST['treatment'];
+	$patient = $_POST['patient'];
+	// $time = $_POST['time'];
+
+	$sql = "INSERT INTO appointment(name, email, phone, date, age, gender, treatment, patient) VALUES('$name', '$email', '$phone', '$date', '$age', '$gender', '$treatment', '$patient')";
+
+	if (mysqli_query($conn, $sql)) {
+		// $_SESSION['message1'] = "<h1>Awesome!</h1>"; 
+		// $_SESSION['message2'] = "<h3>Your booking has been confirmed.</h3>";
+		$_SESSION['message'] = "Your Booking Has Been Confirmed...";
+	} else {
+		echo mysqli_error($conn);
+	}
+}
+
+?>
 <!DOCTYPE html>
 <!-- Spa Magic - Spa & Beauty Salon Landing Page Template design design by Jthemes (http://www.jthemes.net) -->
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -442,7 +468,15 @@ include 'database/connection.php';
 									<div class="col-md-12 mt-5 text-right">
 										<input type="submit" class="btn btn-md btn-color-02 color-01-hover submit" value="Book Now" name="book">
 									</div>
-
+									<!-- Display booking success message -->
+									<?php if (isset($_SESSION['message'])) : ?>
+										<div class="msg">
+										<?php
+											echo $_SESSION['message'];
+											unset($_SESSION['message']);
+										?>
+									</div>
+									<?php endif ?>
 									<div id="error_message" class="ajax_response" style="float:left"></div>
 									<div id="success_message" class="ajax_response" style="float:left"></div>
 
@@ -764,39 +798,5 @@ include 'database/connection.php';
 
 </html>
 
-<!-- Insert Data to database -->
-<?php
 
-if (isset($_POST['book'])) {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$phone = $_POST['phone'];
-	$date = date('Y-m-d', strtotime($_POST['date']));
-	$age = $_POST['age'];
-	$gender = $_POST['gender'];
-	$treatment = $_POST['treatment'];
-	$patient = $_POST['patient'];
-	// $time = $_POST['time'];
 
-	$sql = "INSERT INTO appointment(name, email, phone, date, age, gender, treatment, patient) VALUES('$name', '$email', '$phone', '$date', '$age', '$gender', '$treatment', '$patient')";
-
-	if (mysqli_query($conn, $sql)) {
-		// $_SESSION['message1'] = "<h1>Awesome!</h1>"; 
-		// $_SESSION['message2'] = "<h3>Your booking has been confirmed.</h3>";
-		$_SESSION['message'] = "Your Booking Has Been Confirmed...";
-	} else {
-		echo mysqli_error($conn);
-	}
-}
-
-?>
-
-<!-- Display booking success message -->
-<?php if (isset($_SESSION['message'])) : ?>
-	<div class="msg">
-	<?php
-		echo $_SESSION['message'];
-		unset($_SESSION['message']);
-	?>
-</div>
-<?php endif ?>
