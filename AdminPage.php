@@ -1,4 +1,4 @@
-<?php include 'health/database/connection.php'?>
+<?php include 'database/connection.php'?>
 
 <!DOCTYPE html>
 
@@ -138,7 +138,7 @@
         <table id = "booking" style = "width: 90%" border="1" >
 		    <thead class="thead-dark">
 				<tr class="bg-primary">
-				    <th>ID</th>
+				  <th>ID</th>
 					<th>NAME</th>
 					<th>EMAIL</th>
 					<th>PHONE</th>
@@ -175,10 +175,10 @@
           <td><?php echo $row['date'] ?></td>
           <td><?php echo $row['time'] ?></td>
           <td>
-				      <a href="#?edit=<?php echo $row['id']; ?>" class="edit_btn" ><i class="fas fa-edit" style="color:grey"></i></a>
+              <a href="AdminEdit.php?id=<?php echo $id; ?>"><i class="fas fa-edit" style="color:grey"></i></a>
 			    </td>
 			    <td>
-				      <a href="#?del=<?php echo $row['id']; ?>" class="del_btn"><i class="fa fa-trash" style="color:grey"></i></a>
+              <a href="deleteAdmin.php?id=<?php echo $id; ?>" onclick="return confirm('Are you sure?')"><i class="fa fa-trash" style="color:grey"></i></a>
 			    </td>	
 					</tr>
 						<?php     

@@ -27,6 +27,8 @@ if (isset($_POST['book'])) {
 }
 
 ?>
+
+
 <!DOCTYPE html>
 <!-- Spa Magic - Spa & Beauty Salon Landing Page Template design design by Jthemes (http://www.jthemes.net) -->
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -515,6 +517,16 @@ if (isset($_POST['book'])) {
 							</div>
 						</div> <!-- END CONTACTS INFO -->
 
+						<!-- Display booking success message -->
+						<?php if (isset($_SESSION['message'])) : ?>
+										<div class="msg">
+									<?php
+										echo $_SESSION['message'];
+										unset($_SESSION['message']);
+									?>
+
+									<?php endif ?>
+
 
 					</div> <!-- End row -->
 
@@ -721,7 +733,7 @@ if (isset($_POST['book'])) {
 
 	<!-- EXTERNAL SCRIPTS
 		============================================= -->
-	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- <script src="js/jquery-3.4.1.min.js"></script> -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.easing.js"></script>
@@ -797,6 +809,3 @@ if (isset($_POST['book'])) {
 </body>
 
 </html>
-
-
-

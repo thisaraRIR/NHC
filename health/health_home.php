@@ -52,10 +52,10 @@
 		<link href="css/jquery.datetimepicker.min.css" rel="stylesheet">
 	
 		<!-- TEMPLATE CSS -->
-		<link href="css/gold-theme.css" rel="stylesheet"> 
+		<!-- <link href="css/gold-theme.css" rel="stylesheet">  -->
 		<link href="css/pink-theme.css" rel="stylesheet">
-		<link href="css/rose-theme.css" rel="stylesheet"> 
-		<link href="css/silk-theme.css" rel="stylesheet">
+		<!-- <link href="css/rose-theme.css" rel="stylesheet"> 
+		<link href="css/silk-theme.css" rel="stylesheet"> -->
 
 		<!-- RESPONSIVE CSS -->
 		<link href="css/responsive.css" rel="stylesheet">

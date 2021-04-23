@@ -1,6 +1,6 @@
 <?php
 
-require_once('connection.php');
+require_once('../database/connection.php');
 session_start();
 
     if(isset($_POST['btnlogin']))
