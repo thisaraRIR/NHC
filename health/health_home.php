@@ -49,13 +49,13 @@
 		<link href="css/owl.carousel.min.css" rel="stylesheet">
 		<link href="css/flexslider.css" rel="stylesheet">
 		<link href="css/owl.theme.default.min.css" rel="stylesheet">
-		<!-- <link href="css/jquery.datetimepicker.min.css" rel="stylesheet"> -->
+		<link href="css/jquery.datetimepicker.min.css" rel="stylesheet">
 	
 		<!-- TEMPLATE CSS -->
-		<!-- <link href="css/gold-theme.css" rel="stylesheet"> -->
+		<!-- <link href="css/gold-theme.css" rel="stylesheet">  -->
 		<link href="css/pink-theme.css" rel="stylesheet">
-		<!-- <link href="css/rose-theme.css" rel="stylesheet"> -->
-		<!-- <link href="css/silk-theme.css" rel="stylesheet"> -->
+		<!-- <link href="css/rose-theme.css" rel="stylesheet"> 
+		<link href="css/silk-theme.css" rel="stylesheet"> -->
 
 		<!-- RESPONSIVE CSS -->
 		<link href="css/responsive.css" rel="stylesheet">
@@ -64,7 +64,7 @@
 		<!--Whatsapp CSS-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/whatsapp.css">
-	
+		<script src="./js/jquery.appear.js"></script>
 	</head>
 
 
@@ -852,7 +852,7 @@
 						<!-- VIDEO LINK -->	
 			 			<div class="col-md-8 offset-md-2">
 			 				<div class="video-1-preview">					
-								<a class="video-popup2" href="https://www.youtube.com/embed/7e90gBu4pas">  <!-- Change the link HERE!!! -->	
+								<a class="video-popup2" href="https://www.youtube.com/embed/7e90gBu4pas">  Change the link HERE!!!	
 
 									<!-- Play Icon --> 							
 									<div class="video-btn bg-color-09">	
@@ -1907,7 +1907,7 @@
 		<script src="js/jquery.appear.js"></script>
 		<script src="js/jquery.scrollto.js"></script>	
 		<script src="js/menu.js"></script>	
-		<script src="js/materialize.js"></script>
+		<!-- <script src="js/materialize.js"></script> -->
 		<script src="js/tweenmax.min.js"></script>	
 		<script src="js/slideshow.js"></script>	
 		<script src="js/imagesloaded.pkgd.min.js"></script>

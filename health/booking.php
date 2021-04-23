@@ -1,7 +1,6 @@
 <?php
 include 'database/connection.php';
 ?>
-
 <!-- Insert Data to database -->
 <?php
 
@@ -471,7 +470,15 @@ if (isset($_POST['book'])) {
 									<div class="col-md-12 mt-5 text-right">
 										<input type="submit" class="btn btn-md btn-color-02 color-01-hover submit" value="Book Now" name="book">
 									</div>
-
+									<!-- Display booking success message -->
+									<?php if (isset($_SESSION['message'])) : ?>
+										<div class="msg">
+										<?php
+											echo $_SESSION['message'];
+											unset($_SESSION['message']);
+										?>
+									</div>
+									<?php endif ?>
 									<div id="error_message" class="ajax_response" style="float:left"></div>
 									<div id="success_message" class="ajax_response" style="float:left"></div>
 
@@ -726,7 +733,7 @@ if (isset($_POST['book'])) {
 
 	<!-- EXTERNAL SCRIPTS
 		============================================= -->
-	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- <script src="js/jquery-3.4.1.min.js"></script> -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.easing.js"></script>

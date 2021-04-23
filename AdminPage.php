@@ -1,4 +1,4 @@
-<?php include 'health/database/connection.php'?>
+<?php include 'database/connection.php'?>
 
 <!DOCTYPE html>
 
