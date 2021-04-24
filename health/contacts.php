@@ -58,6 +58,10 @@
 	<!-- <link href="css/rose-theme.css" rel="stylesheet"> -->
 	<!-- <link href="css/silk-theme.css" rel="stylesheet"> -->
 
+	<!--Whatsapp CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/whatsapp.css">
+
 	<!-- RESPONSIVE CSS -->
 	<link href="css/responsive.css" rel="stylesheet">
 
@@ -92,7 +96,9 @@
 		============================================= -->
 	<div id="page" class="page">
 
-
+		<!--WHATSAPP CONTENT
+			=============================================-->
+		<a href="https://wa.me/94770728767" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 
 		<!-- HEADER
