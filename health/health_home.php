@@ -134,39 +134,40 @@
 						          	<li aria-haspopup="true"><a href="#">Home</a></li>
 
 									<!--SIMPLE NAVIGATIONAL LINK-->
-									<li aria-haspopup="true"><a href="about.html">About Us</a></li>
+									<li aria-haspopup="true"><a href="about.php">About Us</a></li>
 
 									
 							    	<!-- DROPDOWN MENU -->
 									<li aria-haspopup="true"><a href="#">Treatments<span class="wsarrow"></span></a>
 	            						<ul class="sub-menu">
-	            							<li aria-haspopup="true"><a href="blog-sidebar.html">Cancer Treatment</a></li>
-	            							<li aria-haspopup="true"><a href="blog-classic.html">kidney Disease</a></li>
-						           			<li aria-haspopup="true"><a href="blog-masonry.html">Liver Disease</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Diabetes</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Cholesterol</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Weight Lost</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Hormone imbalance</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Parkinson</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Thyroid</a></li> 
+	            							<li aria-haspopup="true"><a href="#">Cancer Treatment</a></li>
+											<li aria-haspopup="true"><a href="#">Diabetes Treatment</a></li>
+	            							<li aria-haspopup="true"><a href="#">kidney Faiure</a></li>
+						           			<li aria-haspopup="true"><a href="#">Liver Cirrhosis</a></li>
+											<li aria-haspopup="true"><a href="#">Hormone imbalance</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Cholesterol</a></li>
+						           			<li aria-haspopup="true"><a href="#">Weight Lost</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Parkinson</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Thyroid</a></li> 
 						           		</ul>
 								    </li>	<!-- END DROPDOWN MENU -->
 									
 							    	<!-- DROPDOWN MENU -->
-						          	<li aria-haspopup="true"><a href="blog-classic.html">Blog</a></li>	
-
-									<!--SIMPLE NAVIGATION LINK-->
-									<li class="nl-simple" aria-haspopup="true"><a href="pricing.html">Pricing</a></li>
+						          	<li aria-haspopup="true"><a href="#">Blog</a></li>	
 							    	<!-- SIMPLE NAVIGATION LINK -->
-							    	<li class="nl-simple" aria-haspopup="true"><a href="faqs.html">F&Q</a></li> 
+							    	<li class="nl-simple" aria-haspopup="true"><a href="#">F&Q</a></li> 
 
 									<!-- SIMPLE NAVIGATION LINK -->
-							    	<li class="nl-simple" aria-haspopup="true"><a href="contacts.html">Contact</a></li> 
+							    	<li class="nl-simple" aria-haspopup="true"><a href="contacts.php">Contact</a></li> 
 
 							    	<!-- HEADER CALL BUTTON -->
 							    	<li class="nl-simple header-phone" aria-haspopup="true">
 							    		<a href="tel:077 072 8767"><span class="bg-color-09 white-color"><i class="fas fa-phone"></i></span>+94 77 072 8767</a>
-							    	</li> 	
+							    	</li> 
+									<li class="nl-simple header-phone" aria-haspopup="true">
+										<!-- Button -->	
+										<a href="#" class="btn btn-color-02 tra-02-hover">Book Now</a>	
+									</li>
 	        					</ul>
 	        				</nav>	<!-- END MAIN MENU -->
 
@@ -184,15 +185,15 @@
 			============================================= -->	
 			<section id="hero-4" class="hero-section division">
  				<div class="slideshow">
-   					<div class="slideshow-inner">
+   					<!-- <div class="slideshow-inner"> -->
 
 
 						<!-- SLIDER -->
-   						<div class="slides">
+   						<!-- <div class="slides"> -->
 
 
 							<!-- SLIDE #1 -->
-							<div class="slide is-active">
+							<!-- <div class="slide is-active"> -->
 
 								<!-- Slide Content -->	
 					          	<div class="slide-content">
@@ -202,95 +203,99 @@
 					            				<div class="caption white-color">
 
 								            		<!-- Title -->
-								              		<div class="title"><h2>Therapy</h2></div>
+								              		<!-- <div class="title"><h2>Therapy</h2></div> -->
 
 								              		<!-- Text -->
-										            <div class="text">
+										            <!-- <div class="text">
 
 														<p>Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in iaculis 
 										                   placerat eugiat mauris in viverra tortor and gravida
-														</p>
+														</p> -->
 
 										               	<!-- Button -->
-														<a href="contacts.html" class="btn btn-md btn-color-02 tra-white-hover">Book an Appointment</a>
+														<!-- <a href="contacts.html" class="btn btn-md btn-color-02 tra-white-hover">Book an Appointment</a>
 
-										            </div>
+										            </div> -->
 
 												</div>
 											</div>
 										</div>
 					            	</div>
-					          	</div>	<!-- End Slide Content -->	
+					          	</div>	
+								  <!-- End Slide Content -->	
 
 								<!-- Slide Background Image -->
 						        <div class="image-container">
-						           	<img class="img-fluid" src="images/slider/slide-7.jpg" alt="slide-background">
+						           	<img class="img-fluid" src="images/slider/slide-7.png" alt="slide-background">
 						        </div>
 
-					    	</div>	<!-- END SLIDE #1 -->
+					    	<!-- </div>	 -->
+							<!-- END SLIDE #1 -->
 
 
 					   		<!-- SLIDE #2 -->
-							<div class="slide">
+							<!-- <div class="slide"> -->
 
 								<!-- Slide Content -->	
-								<div class="slide-content">		
+								<!-- <div class="slide-content">		
 									<div class="container">
 		       							<div class="row">
 		       								<div class="col-md-12">			          		
-					            				<div class="caption white-color">
+					            				<div class="caption white-color"> -->
 
 								            		<!-- Title -->
-								              		<div class="title"><h2>Medical</h2></div>
+								              		<!-- <div class="title"><h2>Medical</h2></div> -->
 
 								              		<!-- Text -->
-										            <div class="text">
+										            <!-- <div class="text">
 
 										                <p>Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in iaculis 
 										                   placerat eugiat mauris in viverra tortor and gravida
-														</p>
+														</p> -->
 
 										                <!-- Button -->
-														<a href="#services-16" class="btn btn-md btn-color-02 tra-white-hover">Discover More</a>
+														<!-- <a href="#services-16" class="btn btn-md btn-color-02 tra-white-hover">Discover More</a> -->
 
-										            </div>
+										            <!-- </div> -->
 
-												</div>
+												<!-- </div>
 											</div>
 										</div>
 					            	</div>
-					          	</div>	<!-- End Slide Content -->					
+					          	</div>	 -->
+								  <!-- End Slide Content -->					
 
 								<!-- Slide Background Image -->
-						        <div class="image-container">
+						        <!-- <div class="image-container">
 						          	<img class="img-fluid" src="images/slider/slide-5.jpg" alt="slide-background">
-						        </div>
+						        </div> -->
 						  
-						    </div>	<!-- END SLIDE #2 -->
+						    <!-- </div>	 -->
+							<!-- END SLIDE #2 -->
 
 
 						    <!-- SLIDE #3 -->
-							<div class="slide">
+							<!-- <div class="slide"> -->
 
 								<!-- Slide Content -->	
-								<div class="slide-content">
+								<!-- <div class="slide-content">
 									<div class="container">
 		       							<div class="row">
 		       								<div class="col-md-12">       
-					            				<div class="caption text-center white-color">
+					            				<div class="caption text-center white-color"> -->
 
 								            		<!-- Title -->
-								              		<div class="title"><h2>Nutrition</h2></div>
+								              		<!-- <div class="title"><h2>Nutrition</h2></div> -->
 
 								              		<!-- Text -->
-										            <div class="text">
+										            <!-- <div class="text">
 
 										            	<p>Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in iaculis 
 										                   placerat eugiat mauris in viverra tortor and gravida
-														</p>
+														</p> -->
 										                
 										                <!-- Button -->
-														<a href="#services-9" class="btn btn-md btn-color-02 tra-white-hover">Purchase Now</a>
+														<!-- <a href="#services-9" class="btn btn-md btn-color-02 tra-white-hover">Purchase Now</a>
 
 							            			</div>
 
@@ -298,28 +303,34 @@
 											</div>
 										</div>
 					            	</div>
-					          	</div>	<!-- End Slide Content -->	
+					          	</div>	 -->
+								  <!-- End Slide Content -->	
 
 								<!-- Slide Background Image -->
-						        <div class="image-container">
+						        <!-- <div class="image-container">
 						           	<img class="img-fluid" src="images/slider/slide-8.jpg" alt="slide-background">
 						        </div>
 
-						    </div>	<!-- END SLIDE #3 -->
+						    </div>	 -->
+							<!-- END SLIDE #3 -->
 
-						</div>	<!-- END SLIDER -->
+						<!-- </div>	 -->
+						<!-- END SLIDER -->
 
 
 						<!-- SLIDER ARROWS -->
-					    <div class="arrows ico-45 white-color">
+					    <!-- <div class="arrows ico-45 white-color">
 					        <div class="arrow prev"><span class="flaticon-back"> </span></div>
 					        <div class="arrow next"><span class="flaticon-next"> </span></div>
-					    </div>
+					    </div> -->
 
 
-					</div>    <!-- End Slideshow Inner -->
-				</div>	   <!-- End Slideshow -->
-			</section>	<!-- END HERO-4 -->
+					<!-- </div>     -->
+					<!-- End Slideshow Inner -->
+				</div>	   
+				<!-- End Slideshow -->
+			</section>	
+			<!-- END HERO-4 -->
 
 
 
@@ -342,17 +353,76 @@
 								<h3 class="h3-xl txt-color-01">Nature's Healing Ceylon</h3>
 
 								<!-- Text -->	
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
-								   primis libero tempus, blandit a cursus varius at magna tempor
+								<p class="p-lg txt-color-05">We are a holistic wellness center focusing on treating chronic diseases and 
+								our medical practices carried out reduces chemical based synthetic treatments and 
+								its side effects whilst bringing individuals back to their health.
 								</p>
 									
 							</div>	
 						</div>
 					</div>
+				</div>	   <!-- End container -->
+			</section>	<!-- END SERVICES-13 -->
+
+			<!-- DOCTOR DETAILS
+			============================================= -->
+			<section id="about-6" class="bg-01 about-section division">
+				<div class="container">
+					<div class="row d-flex align-items-center">
 
 
-					<!-- SERVICES-13 WRAPPER -->
-			 		<div class="sbox-13-wrapper">
+						<!-- TEXT BLOCK -->	
+						<div class="col-md-7 col-lg-6">
+							<div class="txt-block">
+
+								<!-- Title -->	
+								<h2 class="h3-lg txt-color-01">Prof. Dr. Natalie Cooke (MBBS, MSc. & PhD)</h2> 
+								<!-- <span>Prof. Dr. Natalie Cooke (MBBS, MSc. & PhD)</span> -->
+								<!-- <h3 class="h3-lg txt-color-01"> -->
+								<!-- Text -->	
+								<p class="p-xl txt-color-01">A Medical Doctor specialized in Nutritive Medicine. She also received her PhD at the 
+								University of London in <span>"The correlation of Obesity and Cognitive Aging".</span> She is carrying out research in the areas of Longevity and aging. 
+								She is also known for her Advocacy towards Natural Medicine and the Holistic Approach of Curing Disease. She is also an Advocate for the Mind and Body 
+								Connection of the Human Body.
+								</p>
+
+
+							</div>
+						</div>	<!-- END TEXT BLOCK -->	
+
+
+						<!-- IMAGE BLOCK -->
+						<div class="col-md-5 col-lg-6">
+							<div class="about-6-img">
+								<img class="img-fluid" src="images/Dr_img.jpg" alt="about-image">
+							</div>
+						</div>
+
+
+					</div>	  <!-- End row -->	
+				</div>     <!-- End container -->
+			</section>	<!-- END DOCTOR DETAILS -->
+			<section id="services-13" class="bg-color-01 wide-90 services-section division">
+				<div class="container">
+					<div class="row">	
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-60 text-center">	
+
+								<!-- Transparent Header -->	
+								<h2 class="tra-header txt-color-02">Feel Healthy</h2>	
+
+								<!-- Title 	-->	
+								<h3 class="h3-xl txt-color-01">Nutritive Medical treatment</h3>	
+
+								<!-- Text -->	
+								<p class="p-lg txt-color-05">Assessing the nutritional status of patients with an illness and 
+								recommend dietary adjustments leading to better health condition.
+								</p>
+									
+							</div>	
+						</div>
+						<!-- SERVICES-13 WRAPPER -->
+						<div class="sbox-13-wrapper">
 						<div class="row">
 
 
@@ -362,11 +432,11 @@
 									<div class="sbox-13-txt">
 									
 										<!-- Title -->
-										<h5 class="h5-xl txt-color-01">Cancer Treatments</h5>	
+										<h5 class="h5-xl txt-color-01">Cancer Treatment</h5>	
 
 										<!-- Text -->		
-										<p class="txt-color-05">Aliquam augue suscipit luctus and neque purus ipsum at neque dolor 
-										   primis libero tempus blandit
+										<p class="txt-color-05">Cancer is a complex disease with many factors to consider. Nature’s Healing Ceylon has a holistic 
+										program which addresses every aspect of the disease. Our goal is to achieve the most comprehensive healing experience possible...
 										</p>
 
 										<!-- Button -->
@@ -383,11 +453,11 @@
 									<div class="sbox-13-txt">
 
 										<!-- Title -->
-										<h5 class="h5-xl txt-color-01">Diet Plans</h5>	
+										<h5 class="h5-xl txt-color-01">Diabetes Treatment</h5>	
 
 										<!-- Text -->		
-										<p class="txt-color-05">Aliquam augue suscipit luctus and neque purus ipsum at neque dolor 
-										   primis libero tempus blandit
+										<p class="txt-color-05">Diabetes, a disease where a person has a high level of glucose in the blood either type 1 or 2. In type 2 diabetes either the pancreas 
+										is producing insufficient insulin or the body is not responding to the insulin produced.Diabetic treatments... 
 										</p>
 
 										<!-- Button -->
@@ -404,11 +474,11 @@
 									<div class="sbox-13-txt">
 	
 										<!-- Title -->
-										<h5 class="h5-xl txt-color-01">Body Treatments</h5>
+										<h5 class="h5-xl txt-color-01">Kidney Failure</h5>
 
 										<!-- Text -->		
-										<p class="txt-color-05">Aliquam augue suscipit luctus and neque purus ipsum at neque dolor 
-										   primis libero tempus blandit
+										<p class="txt-color-05">The kidneys are two bean shaped organs about the size of your fist. Kidneys filter extra water and waste out of the blood to make urine. 
+										Kidney disease means the kidneys are damaged and can’t filter the blood the way it should.
 										</p>
 
 										<!-- Button -->
@@ -425,11 +495,12 @@
 									<div class="sbox-13-txt">
 
 										<!-- Title -->
-										<h5 class="h5-xl txt-color-01">Waxing</h5>	
+										<h5 class="h5-xl txt-color-01">Liver Cirrhosis</h5>	
 
 										<!-- Text -->		
-										<p class="txt-color-05">Aliquam augue suscipit luctus and neque purus ipsum at neque dolor 
-										   primis libero tempus blandit
+										<p class="txt-color-05">Liver Cirrhosis is a chronic condition caused by the replacement of normal liver tissues by 
+										fibrous tissues resulting in gradual deterioration and malfunctioning of the liver. Nature’s Healing Ceylon 
+										has been highly effective in treating...
 										</p>
 
 										<!-- Button -->
@@ -440,111 +511,100 @@
 							</div>	<!-- END SERVICE BOX #4 -->	
 
 
-						</div>  <!-- End row -->	
-				 	</div>	<!-- END SERVICES-13 WRAPPER -->
+					</div>
+				</div>
+			</section>
 
-
-				</div>	   <!-- End container -->
-			</section>	<!-- END SERVICES-13 -->
-
-
+			<!--TREATMENT CARDS-->
+			<!-- <section id="services-13" class="bg-color-01 wide-90 services-section division">
+				<div class="container">
+					
+				</div>
+			</section> -->
 
 
 			<!-- SERVICES-1
 			============================================= -->
-			<section id="services-1" class="bg-color-01 pb-60 services-section division">
-				<div class="container">
+			<!-- <section id="services-1" class="bg-color-01 pb-60 services-section division">
+				<div class="container"> -->
 
 
 					<!-- SECTION TITLE -->	
-					<div class="row">	
-						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">	
-
-								<!-- Transparent Header -->	
-								<h2 class="tra-header txt-color-02">Feel Special</h2>	
-
-								<!-- Title 	-->	
-								<h3 class="h3-xl txt-color-01">Making You More Stylish</h3>	
-
-								<!-- Text -->	
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
-								   primis libero tempus, blandit a cursus varius at magna tempor
-								</p>
-									
-							</div>	
-						</div>
-					</div>
+					
 
 
 					<!-- SERVICES-1 WRAPPER -->
-			 		<div class="sbox-1-wrapper">
-						<div class="row">
+			 		<!-- <div class="sbox-1-wrapper">
+						<div class="row"> -->
 
 
 							<!-- SERVICE BOX #1 -->
-							<div class="col-md-4">
-								<div class="sbox-1">
+							<!-- <div class="col-md-4">
+								<div class="sbox-1"> -->
 									
 									<!-- Image -->
-									<img class="img-fluid" src="images/serv-01.png" alt="service-image" />	
+									<!-- <img class="img-fluid" src="images/serv-01.png" alt="service-image" />	 -->
 										
 									<!-- Title -->
-									<h5 class="h5-md txt-color-01">Aromatherapy</h5>
+									<!-- <h5 class="h5-md txt-color-01">Aromatherapy</h5> -->
 
 									<!-- Text -->
-									<p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula risus auctor tempus 
+									<!-- <p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula risus auctor tempus 
 									   dolor feugiat lacinia ultrice in ligula
 									</p>
 
 								</div>							
-							</div>
+							</div> -->
 
 
 							<!-- SERVICE BOX #2 -->
-							<div class="col-md-4">
-								<div class="sbox-1">
+							<!-- <div class="col-md-4">
+								<div class="sbox-1"> -->
 									
 									<!-- Image -->
-									<img class="img-fluid" src="images/serv-02.png" alt="service-image" />	
+									<!-- <img class="img-fluid" src="images/serv-02.png" alt="service-image" />	 -->
 										
 									<!-- Title -->
-									<h5 class="h5-md txt-color-01">Relax</h5>
+									<!-- <h5 class="h5-md txt-color-01">Relax</h5> -->
 
 									<!-- Text -->
-									<p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula risus auctor tempus dolor 
+									<!-- <p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula risus auctor tempus dolor 
 									   feugiat lacinia ultrice in ligula
 									</p>							
 								
 								</div>							
-							</div>
+							</div> -->
 
 
 							<!-- SERVICE BOX #3 -->
-							<div class="col-md-4">
-								<div class="sbox-1">
+							<!-- <div class="col-md-4">
+								<div class="sbox-1"> -->
 									
 									<!-- Image -->
-									<img class="img-fluid" src="images/serv-03.png" alt="service-image" />	
+									<!-- <img class="img-fluid" src="images/serv-03.png" alt="service-image" />	 -->
 										
 									<!-- Title -->
-									<h5 class="h5-md txt-color-01">Massage</h5>
+									<!-- <h5 class="h5-md txt-color-01">Massage</h5> -->
 
 									<!-- Text -->
-									<p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula risus auctor tempus dolor 
+									<!-- <p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula risus auctor tempus dolor 
 									   feugiat lacinia ultrice in ligula
 									</p>
 
 								</div>							
-							</div>	
+							</div>	 -->
 
 
-						</div>  <!-- End row -->	
-				 	</div>	<!-- END SERVICES-1 WRAPPER -->
+						<!-- </div>   -->
+						<!-- End row -->	
+				 	<!-- </div>	 -->
+					 <!-- END SERVICES-1 WRAPPER -->
 
 
-				</div>	   <!-- End container -->
-			</section>	<!-- END SERVICES-1 -->
+				<!-- </div>	   -->
+				 <!-- End container -->
+			<!-- </section>	 -->
+			<!-- END SERVICES-1 -->
 
 
 
@@ -557,21 +617,25 @@
 
 
 						<!-- BANNER TEXT -->
-						<div class="col-md-12 text-center">
-							<div class="banner-6-txt text-center white-color">
+						<!-- <div class="col-md-12 text-center">
+							<div class="banner-6-txt text-center white-color"> -->
 
 								<!-- Title -->	
-								<h2>25% OFF</h2>
+								<!-- <h2>25% OFF</h2>
 								<h3 class="txt-color-06">FOR ALL SPA POCEDURES</h3>
 								<p>During this weekend for all clients</p>
 
-							</div>
-						</div>	<!-- END BANNER TEXT -->
+							</div> -->
+						<!-- </div>	 -->
+						<!-- END BANNER TEXT -->
 
 
-					</div>    <!-- End row -->	
-				</div>	   <!-- End container -->	
-			</section>	<!-- END BANNER-6 -->
+					</div>    
+					<!-- End row -->	
+				</div>	   
+				<!-- End container -->	
+			</section>	
+			<!-- END BANNER-6 -->
 
 
 
@@ -583,154 +647,158 @@
 
 
 					<!-- SECTION TITLE -->	
-					<div class="row">	
+					<!-- <div class="row">	
 						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">	
+							<div class="section-title mb-60 text-center">	 -->
 
 								<!-- Transparent Header -->	
-								<h2 class="tra-header txt-color-02">Our Services</h2>	
+								<!-- <h2 class="tra-header txt-color-02">Our Services</h2>	 -->
 
 								<!-- Title 	-->	
-								<h3 class="h3-xl txt-color-01">The Art Of Natural Beauty</h3>	
+								<!-- <h3 class="h3-xl txt-color-01">The Art Of Natural Beauty</h3>	 -->
 
 								<!-- Text -->	
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
+								<!-- <p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
 								   primis libero tempus, blandit a cursus varius at magna tempor
 								</p>
 									
 							</div>	
 						</div>
-					</div>
+					</div> -->
 
 
 					<!-- SERVICES-10 WRAPPER -->
-			 		<div class="sbox-10-wrapper">
-						<div class="row">
+			 		<!-- <div class="sbox-10-wrapper">
+						<div class="row"> -->
 
 
 							<!-- SERVICE BOX #1 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="sbox-10 bg-white text-center">
+							<!-- <div class="col-md-6 col-lg-3">
+								<div class="sbox-10 bg-white text-center"> -->
 									
 									<!-- Image -->
-									<div class="sbox-10-img">
+									<!-- <div class="sbox-10-img">
 										<div class="hover-overlay"> 
 											<img class="img-fluid" src="images/serv-13.jpg" alt="service-image" />	
 										</div>
-									</div>
+									</div> -->
 
 									<!-- Text -->
-									<div class="sbox-10-txt">
+									<!-- <div class="sbox-10-txt"> -->
 
 										<!-- Title -->
-										<h5 class="h5-sm txt-color-01">Combination Massage</h5>
+										<!-- <h5 class="h5-sm txt-color-01">Combination Massage</h5> -->
 
 										<!-- Text -->	
-										<p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum neque dolor</p>	
+										<!-- <p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum neque dolor</p>	 -->
 
 										<!-- Button -->
-										<a href="blog-classic.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out More</a> 
+										<!-- <a href="blog-classic.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out More</a> 
 
 									</div>
 
 								</div>							
-							</div>
+							</div> -->
 
 
 							<!-- SERVICE BOX #2 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="sbox-10 bg-white text-center">
+							<!-- <div class="col-md-6 col-lg-3">
+								<div class="sbox-10 bg-white text-center"> -->
 									
 									<!-- Image -->
-									<div class="sbox-10-img">
+									<!-- <div class="sbox-10-img">
 										<div class="hover-overlay"> 
 											<img class="img-fluid" src="images/serv-17.jpg" alt="service-image" />	
 										</div>
-									</div>
+									</div> -->
 
 									<!-- Text -->
-									<div class="sbox-10-txt">
+									<!-- <div class="sbox-10-txt"> -->
 
 													
 										<!-- Title -->
-										<h5 class="h5-sm txt-color-01">Special Care Solutions</h5>
+										<!-- <h5 class="h5-sm txt-color-01">Special Care Solutions</h5> -->
 
 										<!-- Text -->	
-										<p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum neque dolor</p>		
+										<!-- <p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum neque dolor</p>		 -->
 
 										<!-- Button -->
-										<a href="blog-classic.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out More</a> 		
+										<!-- <a href="blog-classic.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out More</a> 		
 
 									</div>						
 								
 								</div>							
-							</div>
+							</div> -->
 
 
 							<!-- SERVICE BOX #3 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="sbox-10 bg-white text-center">
+							<!-- <div class="col-md-6 col-lg-3">
+								<div class="sbox-10 bg-white text-center"> -->
 									
 									<!-- Image -->
-									<div class="sbox-10-img">
+									<!-- <div class="sbox-10-img">
 										<div class="hover-overlay"> 
 											<img class="img-fluid" src="images/serv-19.jpg" alt="service-image" />	
 										</div>
-									</div>
+									</div> -->
 
 									<!-- Text -->
-									<div class="sbox-10-txt">
+									<!-- <div class="sbox-10-txt"> -->
 
 										<!-- Title -->
-										<h5 class="h5-sm txt-color-01">Relaxing & Body Treatments</h5>
+										<!-- <h5 class="h5-sm txt-color-01">Relaxing & Body Treatments</h5> -->
 
 										<!-- Text -->	
-										<p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum neque dolor</p>	
+										<!-- <p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum neque dolor</p>	 -->
 
 										<!-- Button -->
-										<a href="blog-classic.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out More</a> 	
+										<!-- <a href="blog-classic.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out More</a> 	
 
 									</div>
 
 								</div>							
-							</div>	
+							</div>	 -->
 
 
 							<!-- SERVICE BOX #4 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="sbox-10 bg-white text-center">
+							<!-- <div class="col-md-6 col-lg-3">
+								<div class="sbox-10 bg-white text-center"> -->
 									
 									<!-- Image -->
-									<div class="sbox-10-img">
+									<!-- <div class="sbox-10-img">
 										<div class="hover-overlay"> 
 											<img class="img-fluid" src="images/serv-16.jpg" alt="service-image" />	
 										</div>
-									</div>
+									</div> -->
 
 									<!-- Text -->
-									<div class="sbox-10-txt">
+									<!-- <div class="sbox-10-txt"> -->
 
 										<!-- Title -->
-										<h5 class="h5-sm txt-color-01">Oils & Aromatherapy</h5>
+										<!-- <h5 class="h5-sm txt-color-01">Oils & Aromatherapy</h5> -->
 
 										<!-- Text -->	
-										<p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum neque dolor</p>		
+										<!-- <p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum neque dolor</p>		 -->
 
 										<!-- Button -->
-										<a href="blog-classic.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out More</a> 		
+										<!-- <a href="blog-classic.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out More</a> 		
 
 									</div>
 
 								</div>							
-							</div>
+							</div> -->
 
 
-						</div>  <!-- End row -->	
-				 	</div>	<!-- END SERVICES-10 WRAPPER -->
+						<!-- </div>   -->
+						<!-- End row -->	
+				 	<!-- </div>	 -->
+					 <!-- END SERVICES-10 WRAPPER -->
 
 
-				</div>	   <!-- End container -->
-			</section>	<!-- END SERVICES-10 -->
+				</div>	   
+				<!-- End container -->
+			</section>	
+			<!-- END SERVICES-10 -->
 
 
 
@@ -787,7 +855,7 @@
 
 									<!-- Text -->
 									<div class="abox-1-txt">
-										<h5 class="h5-xs txt-color-01">Safety Standards</h5>
+										<h5 class="h5-xs txt-color-01">Personalized Medication</h5>
 										<p class="txt-color-05">Congue augue egestas magna volutpat dictum suscipit ipsum egestas magna vitae purus</p>
 									</div>
 
@@ -805,7 +873,7 @@
 
 									<!-- Text -->
 									<div class="abox-1-txt">
-										<h5 class="h5-xs txt-color-01">Lifestyle Program</h5>
+										<h5 class="h5-xs txt-color-01">Personalized Diet Plan</h5>
 										<p class="txt-color-05">Congue augue egestas magna volutpat dictum suscipit ipsum egestas magna vitae purus</p>
 									</div>
 
@@ -824,7 +892,7 @@
 
 									<!-- Text -->
 									<div class="abox-1-txt">
-										<h5 class="h5-xs txt-color-01">Gift Cards</h5>
+										<h5 class="h5-xs txt-color-01">Expert Medical Advice</h5>
 										<p class="txt-color-05">Congue augue egestas magna volutpat dictum suscipit ipsum egestas magna vitae purus</p>
 									</div>
 
@@ -852,7 +920,7 @@
 						<!-- VIDEO LINK -->	
 			 			<div class="col-md-8 offset-md-2">
 			 				<div class="video-1-preview">					
-								<a class="video-popup2" href="https://www.youtube.com/embed/7e90gBu4pas">  Change the link HERE!!!	
+								<a class="video-popup2" href="https://www.youtube.com/embed/7e90gBu4pas">  <!--Change the link HERE!!!-->	
 
 									<!-- Play Icon --> 							
 									<div class="video-btn bg-color-09">	
@@ -923,20 +991,20 @@
 								<div class="blog-post-txt">
 
 									<!-- Post Data -->
-									<span class="txt-color-06">Skincare</span>
+									<span class="txt-color-06">Health</span>
 
 									<!-- Post Title -->
 									<h5 class="h5-sm txt-color-01">
-										<a href="single-post.html">Quaerat neque purus ipsum neque dolor primis libero</a>
+										<a href="single-post.html">Retirement and Your Health</a>
 									</h5>
 
 									<!-- Post Text -->
-									<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
-									   blandit sapien gravida donec ipsum undo porta justo...
+									<p class="txt-color-05">Emerging research suggests that retirement could lead to a decline in your cognitive function. 
+									Anyone who’s retired or thinking about retirement should read this to learn more...
 									</p>
 
 									<!-- Post Author -->
-									<p class="post-author txt-color-05">Jane Smith - Sep 07, 2020</p>	
+									<p class="post-author txt-color-05">Prof. Dr. Natalie Cooke - Sep 07, 2020</p>	
 
 								</div>
 
@@ -1031,7 +1099,7 @@
 							<div class="txt-block">
 
 								<!-- Title -->	
-								<h3 class="h3-lg txt-color-01">Want to Make a Appointmeqnt or Have a Question?</h3>
+								<h3 class="h3-lg txt-color-01">Want to Make a Appointment or Have a Question?</h3>
 
 								<!-- Text -->	
 								<p class="p-xl txt-color-01">Call us : <span>+94 77 072 8767</span> or fill out our online appointment & equiry 
@@ -1039,7 +1107,7 @@
 								</p>
 
 								<!-- Button -->	
-								<a href="contacts.html" class="btn btn-md btn-color-02 color-01-hover">Make an Appointment</a>
+								<a href="contacts.php" class="btn btn-md btn-color-02 color-01-hover">Make an Appointment</a>
 
 							</div>
 						</div>	<!-- END TEXT BLOCK -->	
@@ -1062,59 +1130,59 @@
 
 			<!-- SERVICES-11
 			============================================= -->
-			<section id="services-11" class="bg-color-01 wide-60 services-section division">
-				<div class="container">
+			<!-- <section id="services-11" class="bg-color-01 wide-60 services-section division">
+				<div class="container"> -->
 
 
 					<!-- SECTION TITLE -->	
-					<div class="row">	
+					<!-- <div class="row">	
 						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">	
+							<div class="section-title mb-60 text-center">	 -->
 
 								<!-- Transparent Header -->	
-								<h2 class="tra-header txt-color-02">Packages</h2>	
+								<!-- <h2 class="tra-header txt-color-02">Packages</h2>	 -->
 
 								<!-- Title 	-->	
-								<h3 class="h3-xl txt-color-01">Relax, Renew, Revitalize</h3>	
+								<!-- <h3 class="h3-xl txt-color-01">Relax, Renew, Revitalize</h3>	 -->
 
 								<!-- Text -->	
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
+								<!-- <p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
 								   primis libero tempus, blandit a cursus varius at magna tempor
 								</p>
 									
 							</div>	
 						</div>
-					</div>
+					</div> -->
 
 
 					<!-- SERVICES-11 WRAPPER -->
-			 		<div class="sbox-11-wrapper">
-						<div class="row">
+			 		<!-- <div class="sbox-11-wrapper">
+						<div class="row"> -->
 
 
 							<!-- SERVICE BOX #1 -->
-							<div class="col-md-6">
+							<!-- <div class="col-md-6">
 								<div class="sbox-11">
-									<div class="hover-overlay"> 
+									<div class="hover-overlay">  -->
 
 										<!-- Image -->
-										<img class="img-fluid" src="images/serv-13.jpg" alt="service-image" />			
-										<div class="item-overlay"></div>				
+										<!-- <img class="img-fluid" src="images/serv-13.jpg" alt="service-image" />			
+										<div class="item-overlay"></div>				 -->
 										
 										<!-- Image Meta -->
-										<div class="sbox-11-img-meta white-color">
+										<!-- <div class="sbox-11-img-meta white-color"> -->
 
 											<!-- Text -->
-											<div class="sb-11-txt">
+											<!-- <div class="sb-11-txt">
 												<h5 class="h5-lg">Combination Massage</h5>			
 												<ul class="simple-list">
 													<li class="list-item"><p>Dtox Custom Massage (20 min)</p></li>
 													<li class="list-item"><p>Dtox Custom Facial (50 min)</p></li>
 												</ul>
-											</div>
+											</div> -->
 
 											<!-- Price -->
-											<div class="sbox-11-price">
+											<!-- <div class="sbox-11-price">
 												<div class="sb-11-data">
 													<span>$65</span>
 													<a href="service-details.html" class="btn btn-sm btn-tra-white color-02-hover">Read More</a>
@@ -1125,33 +1193,34 @@
 								 
 									</div>
 								</div>							
-							</div>	<!-- END SERVICE BOX #1 -->	
+							</div>	-->
+							<!-- END SERVICE BOX #1 -->	
 
 
 							<!-- SERVICE BOX #2 -->
-							<div class="col-md-6">
+							<!-- <div class="col-md-6">
 								<div class="sbox-11">
-									<div class="hover-overlay"> 
+									<div class="hover-overlay">  -->
 
 										<!-- Image -->
-										<img class="img-fluid" src="images/serv-16.jpg" alt="service-image" />			
-										<div class="item-overlay"></div>				
+										<!-- <img class="img-fluid" src="images/serv-16.jpg" alt="service-image" />			
+										<div class="item-overlay"></div>				 -->
 										
 										<!-- Image Meta -->
-										<div class="sbox-11-img-meta white-color">
+										<!-- <div class="sbox-11-img-meta white-color"> -->
 
 											<!-- Text -->
-											<div class="sb-11-txt">
+											<!-- <div class="sb-11-txt">
 												<h5 class="h5-lg">Supreme Skicare</h5>			
 												<ul class="simple-list">
 													<li class="list-item"><p>Organic Sea Salt Scrub (30 min)</p></li>
 													<li class="list-item"><p>Soothing Skin Body Wrap (40 min)</p></li>
 													<li class="list-item"><p>Soothing Skin Body Wrap (20 min)</p></li>
 												</ul>
-											</div>
+											</div> -->
 
 											<!-- Price -->
-											<div class="sbox-11-price">
+											<!-- <div class="sbox-11-price">
 												<div class="sb-11-data">
 													<span>$119</span>
 													<a href="service-details.html" class="btn btn-sm btn-tra-white color-02-hover">Read More</a>
@@ -1162,32 +1231,33 @@
 								 
 									</div>
 								</div>							
-							</div>	<!-- END SERVICE BOX #2 -->	
+							</div>	 -->
+							<!-- END SERVICE BOX #2 -->	
 
 
 							<!-- SERVICE BOX #3 -->
-							<div class="col-md-6">
+							<!-- <div class="col-md-6">
 								<div class="sbox-11">
-									<div class="hover-overlay"> 
+									<div class="hover-overlay">  -->
 
 										<!-- Image -->
-										<img class="img-fluid" src="images/serv-19.jpg" alt="service-image" />			
-										<div class="item-overlay"></div>				
+										<!-- <img class="img-fluid" src="images/serv-19.jpg" alt="service-image" />			
+										<div class="item-overlay"></div>				 -->
 										
 										<!-- Image Meta -->
-										<div class="sbox-11-img-meta white-color">
+										<!-- <div class="sbox-11-img-meta white-color"> -->
 
 											<!-- Text -->
-											<div class="sb-11-txt">
+											<!-- <div class="sb-11-txt">
 												<h5 class="h5-lg">Hot Stones Massage</h5>			
 												<ul class="simple-list">
 													<li class="list-item"><p>Organic Sea Salt Scrub (20 min)</p></li>
 													<li class="list-item"><p>Soothing Skin Body Wrap (50 min)</p></li>
 												</ul>
-											</div>
+											</div> -->
 
 											<!-- Price -->
-											<div class="sbox-11-price">
+											<!-- <div class="sbox-11-price">
 												<div class="sb-11-data">
 													<span>$85</span>
 													<a href="service-details.html" class="btn btn-sm btn-tra-white color-02-hover">Read More</a>
@@ -1198,32 +1268,33 @@
 								 
 									</div>
 								</div>							
-							</div>	<!-- END SERVICE BOX #3 -->		
+							</div>	 -->
+							<!-- END SERVICE BOX #3 -->		
 
 
 							<!-- SERVICE BOX #4 -->
-							<div class="col-md-6">
+							<!-- <div class="col-md-6">
 								<div class="sbox-11">
-									<div class="hover-overlay"> 
+									<div class="hover-overlay">  -->
 
 										<!-- Image -->
-										<img class="img-fluid" src="images/serv-17.jpg" alt="service-image" />			
-										<div class="item-overlay"></div>				
+										<!-- <img class="img-fluid" src="images/serv-17.jpg" alt="service-image" />			
+										<div class="item-overlay"></div>				 -->
 										
 										<!-- Image Meta -->
-										<div class="sbox-11-img-meta white-color">
+										<!-- <div class="sbox-11-img-meta white-color"> -->
 
 											<!-- Text -->
-											<div class="sb-11-txt">
+											<!-- <div class="sb-11-txt">
 												<h5 class="h5-lg">Relaxing Massage</h5>			
 												<ul class="simple-list">
 													<li class="list-item"><p>Organic Sea Salt Scrub (20 min)</p></li>
 													<li class="list-item"><p>Soothing Skin Body Wrap (50 min)</p></li>
 												</ul>
-											</div>
+											</div> -->
 
 											<!-- Price -->
-											<div class="sbox-11-price">
+											<!-- <div class="sbox-11-price">
 												<div class="sb-11-data">
 													<span>$55</span>
 													<a href="service-details.html" class="btn btn-sm btn-tra-white color-02-hover">Read More</a>
@@ -1234,54 +1305,59 @@
 								 
 									</div>
 								</div>							
-							</div>	<!-- END SERVICE BOX #4 -->	
+							</div>	 -->
+							<!-- END SERVICE BOX #4 -->	
 
 
-						</div>  <!-- End row -->	
-				 	</div>	<!-- END SERVICES-11 WRAPPER -->
+						<!-- </div>   -->
+						<!-- End row -->	
+				 	<!-- </div>	 -->
+					 <!-- END SERVICES-11 WRAPPER -->
 
 
-				</div>	   <!-- End container -->
-			</section>	<!-- END SERVICES-11 -->
+				<!-- </div>	    -->
+				<!-- End container -->
+			<!-- </section>	 -->
+			<!-- END SERVICES-11 -->
 
 			<!-- ABOUT-8
 			============================================= -->
-			<section id="about-8" class="bg-fixed bg-01 wide-60 rel about-section division">
-				<div class="container">
+			<!-- <section id="about-8" class="bg-fixed bg-01 wide-60 rel about-section division">
+				<div class="container"> -->
 
 
 					<!-- SECTION TITLE -->	
-					<div class="row">	
+					<!-- <div class="row">	
 						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">	
+							<div class="section-title mb-60 text-center">	 -->
 
 								<!-- Transparent Header -->	
-								<h2 class="tra-header txt-color-02">Nature's Healings</h2>	
+								<!-- <h2 class="tra-header txt-color-02">Nature's Healings</h2>	 -->
 
 								<!-- Title 	-->	
-								<h3 class="h3-xl txt-color-01">Experience Life With Color</h3>	
+								<!-- <h3 class="h3-xl txt-color-01">Experience Life With Color</h3>	 -->
 
 								<!-- Text -->	
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
+								<!-- <p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
 								   primis libero tempus, blandit a cursus varius at magna tempor
-								</p>
+								</p> -->
 									
-							</div>	
+							<!-- </div>	
 						</div>
-					</div>
+					</div> -->
 
 
-					<div class="row">
-						<div class="col-xl-10 offset-xl-1">
+					<!-- <div class="row">
+						<div class="col-xl-10 offset-xl-1"> -->
 
 
 							<!-- ABOUT-8 WRAPPER -->
-					 		<div class="abox-3-wrapper text-center">
-								<div class="row d-flex align-items-center">
+					 		<!-- <div class="abox-3-wrapper text-center">
+								<div class="row d-flex align-items-center"> -->
 
 
 									<!-- ABOUT BOX #1 -->	
-									<div id="a8-1" class="col-md-4">
+									<!-- <div id="a8-1" class="col-md-4">
 										<a href="gift-cards.html">
 											<div class="abox-4 bg-white">
 												<div class="abox-4-txt">
@@ -1292,11 +1368,11 @@
 												</div>
 											</div>
 										</a>
-									</div>	
+									</div>	 -->
 
 
 									<!-- ABOUT BOX #2 -->	
-						 			<div id="a8-2" class="col-md-4">
+						 			<!-- <div id="a8-2" class="col-md-4">
 						 				<a href="gift-cards.html">
 											<div class="abox-4 bg-color-07">
 												<div class="abox-4-txt">
@@ -1307,11 +1383,11 @@
 							 					</div>
 											</div>
 										</a>
-									</div>
+									</div> -->
 
 
 									<!-- ABOUT BOX #3 -->
-									<div id="a8-3" class="col-md-4">
+									<!-- <div id="a8-3" class="col-md-4">
 										<a href="gift-cards.html">
 											<div class="abox-4 bg-color-01">
 												<div class="abox-4-txt">
@@ -1325,72 +1401,76 @@
 									</div>
 
 
-								</div>  <!-- End row -->	
-						 	</div>	<!-- END ABOUT-8 WRAPPER -->
+								</div>   -->
+								<!-- End row -->	
+						 	<!-- </div>	 -->
+							 <!-- END ABOUT-8 WRAPPER -->
 
 
-						 </div>
+						 <!-- </div>
 					</div>
 
 
-				</div>	   <!-- End container -->
+				</div>	    -->
+				<!-- End container -->
 
 
 				<!-- Content Image -->
-				<div class="content-img pt-30">
+				<!-- <div class="content-img pt-30">
 					<div class="ab-img-01"><img class="img-fluid" src="images/ab-img-01.png" alt="content-image"></div>
 				</div>
 
 				
-			</section>	<!-- END ABOUT-8 -->
+			</section>	 -->
+			<!-- END ABOUT-8 -->
 
 
 
 
 			<!-- TEAM-1
 			============================================= -->
-			<section id="team-1" class="bg-color-01 wide-60 team-section division">
-				<div class="container">
+			<!-- <section id="team-1" class="bg-color-01 wide-60 team-section division">
+				<div class="container"> -->
 
 
 					<!-- SECTION TITLE -->	
-					<div class="row">	
+					<!-- <div class="row">	
 						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">	
+							<div class="section-title mb-60 text-center">	 -->
 
 								<!-- Transparent Header -->	
-								<h2 class="tra-header txt-color-02">Our Team</h2>	
+								<!-- <h2 class="tra-header txt-color-02">Our Team</h2>	 -->
 
 								<!-- Title 	-->	
-								<h3 class="h3-xl txt-color-01">Relax, You're In Good Hands</h3>	
+								<!-- <h3 class="h3-xl txt-color-01">Relax, You're In Good Hands</h3>	 -->
 
 								<!-- Text -->	
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
+								<!-- <p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
 								   primis libero tempus, blandit a cursus varius at magna tempor
 								</p>
 									
 							</div>	
 						</div>
-					</div>
+					</div> -->
 
 
 					<!-- TEAM MEMBERS WRAPPER -->
-			 		<div class="tm-wrapper">
-						<div class="row">	
+			 		<!-- <div class="tm-wrapper">
+						<div class="row">	 -->
 
 
 							<!-- TEAM MEMBER #1 -->
-							<div class="col-md-6 col-lg-3">	
-								<div class="team-member">
+							<!-- <div class="col-md-6 col-lg-3">	
+								<div class="team-member"> -->
 
 									<!-- Team Member Photo -->
-									<div class="team-member-photo">
+									<!-- <div class="team-member-photo">
 										<div class="hover-overlay"> 
 
-											<img class="img-fluid" src="images/team-1.jpg" alt="team-member-foto">
+											<img class="img-fluid" src="images/team-1.jpg" alt="team-member-foto"> -->
 										
 											<!-- Social Icons -->
-											<div class="tm-social clearfix">
+											<!-- <div class="tm-social clearfix">
 												<ul class="text-center clearfix">																		
 													<li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
 													<li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>	
@@ -1399,30 +1479,30 @@
 											</div>	
 
 										</div>
-									</div>
+									</div> -->
 
 									<!-- Team Member Meta -->		
-									<div class="tm-meta">
+									<!-- <div class="tm-meta">
 										<h6 class="h6-lg txt-color-05">Stacey Richardson</h6>
 										<span class="txt-color-06">Beauty Expert</span>
 									</div>
 
 								</div>
-							</div>
+							</div> -->
 
 
 							<!-- TEAM MEMBER #2 -->
-							<div class="col-md-6 col-lg-3">	
-								<div class="team-member">
+							<!-- <div class="col-md-6 col-lg-3">	
+								<div class="team-member"> -->
 
 									<!-- Team Member Photo -->
-									<div class="team-member-photo">
+									<!-- <div class="team-member-photo">
 										<div class="hover-overlay"> 
 
-											<img class="img-fluid" src="images/team-2.jpg" alt="team-member-foto">
+											<img class="img-fluid" src="images/team-2.jpg" alt="team-member-foto"> -->
 										
 											<!-- Social Icons -->
-											<div class="tm-social clearfix">
+											<!-- <div class="tm-social clearfix">
 												<ul class="text-center clearfix">																		
 													<li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
 													<li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>	
@@ -1431,30 +1511,30 @@
 											</div>	
 
 										</div>
-									</div>
+									</div> -->
 
 									<!-- Team Member Meta -->		
-									<div class="tm-meta">
+									<!-- <div class="tm-meta">
 										<h6 class="h6-lg txt-color-05">Jennifer Harper</h6>
 										<span class="txt-color-06">SPA Master</span>
 									</div>	
 
 								</div>
-							</div>
+							</div> -->
 
 
 							<!-- TEAM MEMBER #3 -->
-							<div class="col-md-6 col-lg-3">	
-								<div class="team-member">
+							<!-- <div class="col-md-6 col-lg-3">	
+								<div class="team-member"> -->
 
 									<!-- Team Member Photo -->
-									<div class="team-member-photo">
+									<!-- <div class="team-member-photo">
 										<div class="hover-overlay"> 
 
-											<img class="img-fluid" src="images/team-3.jpg" alt="team-member-foto">
+											<img class="img-fluid" src="images/team-3.jpg" alt="team-member-foto"> -->
 										
 											<!-- Social Icons -->
-											<div class="tm-social clearfix">
+											<!-- <div class="tm-social clearfix">
 												<ul class="text-center clearfix">																		
 													<li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
 													<li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>	
@@ -1463,30 +1543,30 @@
 											</div>	
 
 										</div>
-									</div>
+									</div> -->
 
 									<!-- Team Member Meta -->		
-									<div class="tm-meta">
+									<!-- <div class="tm-meta">
 										<h6 class="h6-lg txt-color-05">Rodney Stratton</h6>
 										<span class="txt-color-06">Beautician</span>
 									</div>
 
 								</div>
-							</div>
+							</div> -->
 
 
 							<!-- TEAM MEMBER #4 -->
-							<div class="col-md-6 col-lg-3">	
-								<div class="team-member">
+							<!-- <div class="col-md-6 col-lg-3">	
+								<div class="team-member"> -->
 
 									<!-- Team Member Photo -->
-									<div class="team-member-photo">
+									<!-- <div class="team-member-photo">
 										<div class="hover-overlay"> 
 
-											<img class="img-fluid" src="images/team-4.jpg" alt="team-member-foto">
+											<img class="img-fluid" src="images/team-4.jpg" alt="team-member-foto"> -->
 
 											<!-- Social Icons -->
-											<div class="tm-social clearfix">
+											<!-- <div class="tm-social clearfix">
 												<ul class="text-center clearfix">																		
 													<li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
 													<li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>	
@@ -1495,24 +1575,28 @@
 											</div>	
 
 										</div>
-									</div>
+									</div> -->
 
 									<!-- Team Member Meta -->		
-									<div class="tm-meta">
+									<!-- <div class="tm-meta">
 										<h6 class="h6-lg txt-color-05">Jane Smith</h6>
 										<span class="txt-color-06">Beauty Therapist</span>
 									</div>	
 
 								</div>
-							</div>
+							</div> -->
 
 
-						</div>	<!-- End row -->
-					</div>	<!-- END TEAM MEMBERS WRAPPER -->
+						<!-- </div>	 -->
+						<!-- End row -->
+					<!-- </div>	 -->
+					<!-- END TEAM MEMBERS WRAPPER -->
 
 
-				</div>	   <!-- End container -->
-			</section>	<!-- END TEAM-1 -->
+				<!-- </div>	   -->
+				 <!-- End container -->
+			<!-- </section>	 -->
+			<!-- END TEAM-1 -->
 
 
 
@@ -1532,7 +1616,7 @@
 								<h2 class="tra-header txt-color-02">Testimonials</h2>	
 
 								<!-- Title 	-->	
-								<h3 class="h3-xl txt-color-01">What Our Clients Say</h3>	
+								<h3 class="h3-xl txt-color-01">What Our Patients Say</h3>	
 
 								<!-- Text -->	
 								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor 
@@ -1739,7 +1823,7 @@
 
 								<!-- Title -->	
 								<h3>Welcome Nature's Healing.</h3> 
-								<h3>We Manufacture Beauty</h3>
+								<h3>We Manufacture Health</h3>
 
 								<!-- Text -->
 								<p class="p-lg">Donec vel sapien augue integer urna turpis cursus porta, mauris augue at luctus dolor 
@@ -1747,7 +1831,7 @@
 								</p>
 
 								<!-- Button -->
-								<a href="#" class="btn btn-md btn-color-02 tra-white-hover">Book an Appointment</a>
+								<a href="booking.php" class="btn btn-md btn-color-02 tra-white-hover">Book an Appointment</a>
 
 							</div>
 						</div>	<!-- END BANNER TEXT -->
@@ -1823,11 +1907,11 @@
 
 								<!-- Footer Links -->
 								<ul class="txt-color-05 clearfix">
-									<li><p><a href="about.html">About Us</a></p></li>	
+									<li><p><a href="about.php">About Us</a></p></li>	
 									<!-- <li><p><a href="#">Advertising</a></p></li>	 -->
-									<li><p><a href="faqs.html">FAQs</a></p></li>
-									<li><p><a href="contacts.html">Appointments</a></p></li>
-									<li><p><a href="contacts.html">Contact Us</a></p></li>
+									<li><p><a href="#">FAQs</a></p></li>
+									<li><p><a href="contacts.php">Appointments</a></p></li>
+									<li><p><a href="contacts.php">Contact Us</a></p></li>
 									<!-- <li><p><a href="#">Gift Cards</a></p></li>	 -->
 								</ul>
 
@@ -1867,7 +1951,7 @@
 							<!-- FOOTER COPYRIGHT -->
 							<div class="col-lg-6">
 								<div class="footer-copyright">
-									<p>&copy; 2021 Nature's Healing Ceylon. All Rights Reserved</p>
+									<p>&copy; 2021 <strong>Natures Healing Ceylon(Pvt) Ltd.</strong> All Rights Reserved</p>
 								</div>
 							</div>
 
@@ -1875,9 +1959,9 @@
 							<!-- BOTTOM FOOTER LINKS -->
 							<div class="col-lg-6">
 								<ul class="bottom-footer-list text-right clearfix">
-									<li><p class="first-list-link"><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></p></li>	
+									<li><p class="first-list-link"><a href="https://www.facebook.com/natureshealingceylon/"><i class="fab fa-facebook-f"></i> Facebook</a></p></li>	
 									<!-- <li><p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p></li> -->
-									<li><p class="last-li"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></p></li>
+									<li><p class="last-li"><a href="https://www.instagram.com/natureshealingceylon/"><i class="fab fa-instagram"></i> Instagram</a></p></li>
 									<!-- <li><p class="last-li"><a href="#"><i class="fab fa-yelp"></i> Yelp</a></p></li> -->
 								</ul>
 							</div>
@@ -1907,7 +1991,7 @@
 		<script src="js/jquery.appear.js"></script>
 		<script src="js/jquery.scrollto.js"></script>	
 		<script src="js/menu.js"></script>	
-		<!-- <script src="js/materialize.js"></script> -->
+		<script src="js/materialize.js"></script>
 		<script src="js/tweenmax.min.js"></script>	
 		<script src="js/slideshow.js"></script>	
 		<script src="js/imagesloaded.pkgd.min.js"></script>
