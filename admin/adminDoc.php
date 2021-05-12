@@ -1,4 +1,4 @@
-<?php include 'connection.php'?>
+<?php include '../database/connection.php'?>
 <?php
     session_start();
     if(!isset($_SESSION['email'])){
@@ -84,16 +84,16 @@
       <hr class="sidebar-divider">
 
       <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item active">
-        <a class="nav-link collapsed" href="adminDoc.php">
-          <i class="fas fa-stethoscope"></i>
-          <span>Doctor Dashboard</span>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="adminPanel.php">
+          <i class="fa fa-calendar"></i>
+          <span>Dashboard</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="adminView.php">
-          <i class="fas fa-user-cog"></i>
+        <a class="nav-link collapsed" href="AdminPage.php">
+          <i class="fa fa-calendar"></i>
           <span>Admin</span>
         </a>
       </li>
@@ -122,12 +122,15 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
-                <img class="img-profile rounded-circle" src="../images/Logo/NH Logo icon brand.jpg">
+                <img class="img-profile rounded-circle" src="images/Logo/NH Logo icon brand.jpg">
               </a>
-            </li>
-            <!--logout btn-->
-            <li class="nav-item dropdown no-arrow" style="padding-top:15px; ">
-              <a href="logout.php?logout" class="btn btn-outline-secondary" role="button" aria-pressed="true"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout</a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="login.php" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
             </li>
 
           </ul>
@@ -200,7 +203,6 @@
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
-
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>

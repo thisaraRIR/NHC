@@ -58,6 +58,10 @@
 	<!-- <link href="css/rose-theme.css" rel="stylesheet"> -->
 	<!-- <link href="css/silk-theme.css" rel="stylesheet"> -->
 
+	<!--Whatsapp CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/whatsapp.css">
+
 	<!-- RESPONSIVE CSS -->
 	<link href="css/responsive.css" rel="stylesheet">
 
@@ -92,7 +96,9 @@
 		============================================= -->
 	<div id="page" class="page">
 
-
+		<!--WHATSAPP CONTENT
+			=============================================-->
+		<a href="https://wa.me/94770728767" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 
 		<!-- HEADER
@@ -125,8 +131,8 @@
 
 
 	        						<!-- SIMPLE NAVIGATION LINK -->
-							    	<li class="nl-simple" aria-haspopup="true"><a href="health_home.html">Home</a></li>
-									<li aria-haspopup="true"><a href="about.html">About Us</a></li>
+							    	<li class="nl-simple" aria-haspopup="true"><a href="health_home.php">Home</a></li>
+									<li aria-haspopup="true"><a href="about.php">About Us</a></li>
 
 								    <!-- DROPDOWN MENU -->
 						        	<!-- <li aria-haspopup="true"><a href="#">Pages <span class="wsarrow"></span></a>
@@ -162,15 +168,15 @@
 							    <!-- DROPDOWN MENU -->
 									<li aria-haspopup="true"><a href="#">Treatments<span class="wsarrow"></span></a>
 	            						<ul class="sub-menu">
-	            							<li aria-haspopup="true"><a href="blog-sidebar.html">Cancer Treatment</a></li>
-	            							<li aria-haspopup="true"><a href="blog-classic.html">kidney Disease</a></li>
-						           			<li aria-haspopup="true"><a href="blog-masonry.html">Liver Disease</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Diabetes</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Cholesterol</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Weight Lost</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Hormone imbalance</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Parkinson</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Thyroid</a></li> 
+	            							<li aria-haspopup="true"><a href="#">Cancer Treatment</a></li>
+											<li aria-haspopup="true"><a href="#">Diabetes</a></li>
+	            							<li aria-haspopup="true"><a href="#">kidney Failure</a></li>
+						           			<li aria-haspopup="true"><a href="#">Liver Cirrhosis</a></li>
+						           			<li aria-haspopup="true"><a href="#">Hormone imbalance</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Cholesterol</a></li>
+						           			<li aria-haspopup="true"><a href="#">Weight Lost</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Parkinson</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Thyroid</a></li> 
 						           		</ul>
 								    </li>	<!-- END DROPDOWN MENU -->
 
@@ -180,7 +186,7 @@
 
 
 							    	<!-- DROPDOWN MENU -->
-									<li aria-haspopup="true"><a href="blog-classic.html">Blog</a>
+									<li aria-haspopup="true"><a href="#">Blog</a>
 	            						<!-- <ul class="sub-menu">
 	            							<li aria-haspopup="true"><a href="blog-sidebar.html">Blog Sidebar</a></li>
 	            							<li aria-haspopup="true"><a href="blog-classic.html">Blog Classic</a></li>
@@ -188,10 +194,10 @@
 						           			<li aria-haspopup="true"><a href="single-post.html">Single Post</a></li>	      
 						           		</ul> -->
 								    </li>	<!-- END DROPDOWN MENU -->
-									<li class="nl-simple" aria-haspopup="true"><a href="pricing.html">Pricing</a></li>
-									<li class="nl-simple" aria-haspopup="true"><a href="faqs.html">F&Q</a></li> 
+									<!-- <li class="nl-simple" aria-haspopup="true"><a href="pricing.html">Pricing</a></li> -->
+									<li class="nl-simple" aria-haspopup="true"><a href="#">F&Q</a></li> 
 							    	<!-- SIMPLE NAVIGATION LINK -->
-							    	<li class="nl-simple" aria-haspopup="true"><a href="contacts.html">Contacts</a></li> 
+							    	<li class="nl-simple" aria-haspopup="true"><a href="contacts.php">Contacts</a></li> 
 
 
 							    	<!-- HEADER CALL BUTTON 
@@ -202,7 +208,7 @@
 
 								    <!-- HEADER BUTTON -->
 								    <li class="nl-simple" aria-haspopup="true">
-								    	<a href="contacts.html" class="btn btn-color-02 tra-01-hover last-link">Book Now</a>
+								    	<a href="contacts.php" class="btn btn-color-02 tra-01-hover last-link">Book Now</a>
 								    </li>
 
 
@@ -251,9 +257,7 @@
 								<h2 class="h2-lg">Contact Us</h2>
 
 								<!-- Text -->
-								<p class="p-lg">Sapien gravida donec pretium ipsum porta justo integer at feugiat velna
-									vitae auctor
-									an integera magna purus
+								<p class="p-lg">
 								</p>
 
 							</div>
@@ -268,7 +272,7 @@
 								<div class="breadcrumb-nav">
 									<nav aria-label="breadcrumb">
 										<ol class="breadcrumb">
-											<li class="breadcrumb-item"><a href="demo-4.html">Home</a></li>
+											<li class="breadcrumb-item"><a href="health_home.php">Home</a></li>
 											<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
 										</ol>
 									</nav>
@@ -303,9 +307,7 @@
 								<h3 class="h3-xl txt-color-01">Have Any Questions?</h3>
 
 								<!-- Text -->
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque
-									undo dolor
-									primis libero tempus, blandit a cursus varius at magna tempor
+								<p class="p-lg txt-color-05">Do not worry, you are at the right place. Please call us to make an appointment for a consultation.
 								</p>
 
 							</div>
@@ -333,64 +335,17 @@
 
 
 						<!-- CONTACT FORM -->
-						<div class="col-md-7 col-lg-8">
-
-							<!-- Title -->
-							<h4 class="h4-xs txt-color-01">Send A Message</h4>
-
-							<!-- Text -->
-							<p class="txt-color-05">If you want to ask anything just fill in the form below and send us.
-							</p>
-
-							<!-- Form -->
-							<div class="form-holder">
-								<form name="contactform" class="row contact-form">
-
-									<!-- Form Input -->
-									<div class="col-lg-6">
-										<input type="text" name="name" class="form-control name"
-											placeholder="Your Name*">
-									</div>
-
-									<!-- Form Input -->
-									<div class="col-lg-6">
-										<input type="email" name="email" class="form-control email"
-											placeholder="Email Address*">
-									</div>
-
-									<!-- Form Input -->
-									<div class="col-lg-6">
-										<input type="phone" name="contact" class="form-control phone"
-											placeholder="Phone Number*">
-									</div>
-
-									<!-- Form Input -->
-									<div class="col-md-12">
-										<input type="text" name="subject" class="form-control subject"
-											placeholder="What's this about?">
-									</div>
-
-									<!-- Form Textarea -->
-									<div class="col-md-12">
-										<textarea name="message" class="form-control message" rows="6"
-											placeholder="Your Message ..."></textarea>
-									</div>
-
-									<!-- Form Button -->
-									<div class="col-md-12 mt-5 text-right">
-										<button type="submit" class="btn btn-md btn-color-02 tra-02-hover submit">Send
-											Message</button>
-									</div>
-
-									<!-- Form Message -->
-									<div class="col-md-12 contact-form-msg text-center">
-										<div class="sending-msg"><span class="loading"></span></div>
-									</div>
-
-								</form>
-
+						
+						<!-- IMAGE BLOCK -->
+						<div class="col-md-5 col-lg-6">
+							<div class="img-block left-column pc-10 mb-40">
+								<img class="img-fluid" src="images/Logo/Contact-Us-Logo-Placement.png" alt="about-image">
 							</div>
-						</div> <!-- END CONTACT FORM -->
+						</div>
+						
+
+							
+						 <!-- END CONTACT FORM -->
 
 
 						<!-- CONTACTS INFO -->
@@ -401,9 +356,7 @@
 								<h4 class="h4-xs txt-color-01">Contact Details</h4>
 
 								<!-- Text -->
-								<p class="txt-color-05">Integer congue magna pretium ligula at rutrum risus luctus a
-									dolor auctor ipsum
-									blandit purus. Curabitur ac dapibus libero mauris donec
+								<p class="txt-color-05">Please contact us for any inquiries, or make an appointment to consult Doctor.
 								</p>
 
 								<!-- LOCATION -->
@@ -456,13 +409,13 @@
 							<div class="banner-5-txt text-center">
 
 								<!-- Title -->
-								<h2 class="h2-xl txt-color-05">Get 20% Off</h2>
-								<h3 class="h3-xs txt-color-01">For Your First Visit</h3>
+								<h2 class="h3-xl txt-color-05">Get Cured through</h2>
+								<h3 class="h5-xs txt-color-01">100% Natural Treatment</h3>
 
 								<!-- Text -->
-								<p class="p-md txt-color-05">Porta semper lacus cursus, feugiat primis ultrice ligula
-									risus auctor an tempus
-									feugiat dolor undo lacinia cubilia curae
+								<p class="p-md txt-color-05">A combination of ancient wisdom
+								 with modern scientific methods to reduce chemical based synthetic
+								  treatments and its side effects and to bring individuals back to health.
 								</p>
 
 								<!-- Button -->
@@ -544,17 +497,17 @@
 								<!-- Footer Links -->
 								<ul class="txt-color-05 clearfix">
 									<li>
-										<p><a href="about.html">About Us</a></p>
+										<p><a href="about.php">About Us</a></p>
 									</li>
 									<!-- <li><p><a href="#">Advertising</a></p></li>	 -->
 									<li>
-										<p><a href="faqs.html">FAQs</a></p>
+										<p><a href="#">FAQs</a></p>
 									</li>
 									<li>
-										<p><a href="contacts.html">Appointments</a></p>
+										<p><a href="contacts.php">Appointments</a></p>
 									</li>
 									<li>
-										<p><a href="contacts.html">Contact Us</a></p>
+										<p><a href="contacts.php">Contact Us</a></p>
 									</li>
 									<!-- <li><p><a href="#">Gift Cards</a></p></li>	 -->
 								</ul>
@@ -601,7 +554,7 @@
 							<!-- FOOTER COPYRIGHT -->
 							<div class="col-lg-6">
 								<div class="footer-copyright">
-									<p>&copy; 2021 Nature's Healing. All Rights Reserved</p>
+									<p>&copy; 2021 <strong>Natures Healing Ceylon (Pvt) Ltd.</strong> All Rights Reserved</p>
 								</div>
 							</div>
 
@@ -610,11 +563,11 @@
 							<div class="col-lg-6">
 								<ul class="bottom-footer-list text-right clearfix">
 									<li>
-										<p class="first-list-link"><a href="#"><i class="fab fa-facebook-f"></i>
+										<p class="first-list-link"><a href="https://www.facebook.com/natureshealingceylon/"><i class="fab fa-facebook-f"></i>
 												Facebook</a></p>
 									</li>
 									<li>
-										<p class="last-li"><a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+										<p class="last-li"><a href="https://www.instagram.com/natureshealingceylon/"><i class="fab fa-instagram"></i> Instagram</a>
 										</p>
 									</li>
 								</ul>

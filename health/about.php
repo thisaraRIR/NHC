@@ -56,6 +56,10 @@
 	<!-- <link href="css/rose-theme.css" rel="stylesheet"> -->
 	<!-- <link href="css/silk-theme.css" rel="stylesheet"> -->
 
+	<!--Whatsapp CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/whatsapp.css">
+
 	<!-- RESPONSIVE CSS -->
 	<link href="css/responsive.css" rel="stylesheet">
 
@@ -90,7 +94,9 @@
 		============================================= -->
 	<div id="page" class="page">
 
-
+		<!--WHATSAPP CONTENT
+			=============================================-->
+		<a href="https://wa.me/94770728767" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 
 		<!-- HEADER
@@ -123,8 +129,8 @@
 
 
 	        						<!-- SIMPLE NAVIGATION LINK -->
-							    	<li class="nl-simple" aria-haspopup="true"><a href="health_home.html">Home</a></li>
-									<li aria-haspopup="true"><a href="about.html">About Us</a></li>
+							    	<li class="nl-simple" aria-haspopup="true"><a href="health_home.php">Home</a></li>
+									<li aria-haspopup="true"><a href="about.php">About Us</a></li>
 
 								    <!-- DROPDOWN MENU -->
 						        	<!-- <li aria-haspopup="true"><a href="#">Pages <span class="wsarrow"></span></a>
@@ -160,15 +166,15 @@
 							    <!-- DROPDOWN MENU -->
 									<li aria-haspopup="true"><a href="#">Treatments<span class="wsarrow"></span></a>
 	            						<ul class="sub-menu">
-	            							<li aria-haspopup="true"><a href="blog-sidebar.html">Cancer Treatment</a></li>
-	            							<li aria-haspopup="true"><a href="blog-classic.html">kidney Disease</a></li>
-						           			<li aria-haspopup="true"><a href="blog-masonry.html">Liver Disease</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Diabetes</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Cholesterol</a></li>
-						           			<li aria-haspopup="true"><a href="single-post.html">Weight Lost</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Hormone imbalance</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Parkinson</a></li> 
-						           			<li aria-haspopup="true"><a href="single-post.html">Thyroid</a></li> 
+										<li aria-haspopup="true"><a href="#">Cancer Treatment</a></li>
+											<li aria-haspopup="true"><a href="#">Diabetes</a></li>
+	            							<li aria-haspopup="true"><a href="#">kidney Failure</a></li>
+						           			<li aria-haspopup="true"><a href="#">Liver Cirrhosis</a></li>
+						           			<li aria-haspopup="true"><a href="#">Hormone imbalance</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Cholesterol</a></li>
+						           			<li aria-haspopup="true"><a href="#">Weight Lost</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Parkinson</a></li> 
+						           			<li aria-haspopup="true"><a href="#">Thyroid</a></li> 
 						           		</ul>
 								    </li>	<!-- END DROPDOWN MENU -->
 
@@ -178,7 +184,7 @@
 
 
 							    	<!-- DROPDOWN MENU -->
-									<li aria-haspopup="true"><a href="blog-classic.html">Blog</a>
+									<li aria-haspopup="true"><a href="#">Blog</a>
 	            						<!-- <ul class="sub-menu">
 	            							<li aria-haspopup="true"><a href="blog-sidebar.html">Blog Sidebar</a></li>
 	            							<li aria-haspopup="true"><a href="blog-classic.html">Blog Classic</a></li>
@@ -186,10 +192,10 @@
 						           			<li aria-haspopup="true"><a href="single-post.html">Single Post</a></li>	      
 						           		</ul> -->
 								    </li>	<!-- END DROPDOWN MENU -->
-									<li class="nl-simple" aria-haspopup="true"><a href="pricing.html">Pricing</a></li>
-									<li class="nl-simple" aria-haspopup="true"><a href="faqs.html">F&Q</a></li> 
+									<!-- <li class="nl-simple" aria-haspopup="true"><a href="pricing.html">Pricing</a></li> -->
+									<li class="nl-simple" aria-haspopup="true"><a href="#">F&Q</a></li> 
 							    	<!-- SIMPLE NAVIGATION LINK -->
-							    	<li class="nl-simple" aria-haspopup="true"><a href="contacts.html">Contacts</a></li> 
+							    	<li class="nl-simple" aria-haspopup="true"><a href="contacts.php">Contacts</a></li> 
 
 
 							    	<!-- HEADER CALL BUTTON 
@@ -200,7 +206,7 @@
 
 								    <!-- HEADER BUTTON -->
 								    <li class="nl-simple" aria-haspopup="true">
-								    	<a href="contacts.html" class="btn btn-color-02 tra-01-hover last-link">Book Now</a>
+								    	<a href="contacts.php" class="btn btn-color-02 tra-01-hover last-link">Book Now</a>
 								    </li>
 
 
@@ -266,7 +272,7 @@
 								<div class="breadcrumb-nav">
 									<nav aria-label="breadcrumb">
 										<ol class="breadcrumb">
-											<li class="breadcrumb-item"><a href="demo-4.html">Home</a></li>
+											<li class="breadcrumb-item"><a href="health_home.php">Home</a></li>
 											<li class="breadcrumb-item active" aria-current="page">About Us</li>
 										</ol>
 									</nav>
@@ -292,7 +298,7 @@
 						<!-- IMAGE BLOCK -->
 						<div class="col-md-5 col-lg-6">
 							<div class="img-block left-column pc-10 mb-40">
-								<img class="img-fluid" src="images/image-01.png" alt="about-image">
+								<img class="img-fluid" src="images/Logo/Contact-Us-Logo-Placement.png" alt="about-image">
 							</div>
 						</div>
 
@@ -302,261 +308,48 @@
 							<div class="txt-block right-column pc-15 mb-40">
 
 								<!-- Title -->
-								<h3 class="h3-md txt-color-01">Your Beauty and Success Starts Here</h3>
+								<h3 class="h3-md txt-color-01">Your Health and Wellness Starts Here</h3>
 
 								<!-- Text -->
-								<p class="txt-color-05">Porta semper lacus cursus, feugiat primis ultrice a ligula risus
-									auctor an tempus
-									feugiat dolor lacinia cubilia curae integer orci congue and metus mollislorem primis
-									in integer metus
-									mollis faucibus
+								<p class="txt-color-05">Nature’s Healing Ceylon is a holistic wellness center 
+								which focuses on treating chronic diseases such as<strong> Cancer, Diabetes, Kidney Failure
+								and Hormonal Imbalance</strong> through nutritive medicine. The foundation and the fundamental
+								ethos of the medical practices carried out are to reduce chemical based synthetic 
+								treatments and its side effects and to bring individuals back to health through holistic practices.  
 								</p>
 
-								<!-- List -->
-								<ul class="txt-list txt-color-05">
+								<p class="txt-color-05">Drugless therapies are rooted in the ancient culture of Sri Lanka and it dates back to thousands 
+								of years. The origins of ancient practices of indigenous medicine by the indigenous people of Sri 
+								Lanka is known as “Hela Wedakama”. This indigenous health system was complemented by Ayurveda,
+								which has now emerged as an advanced natural medical practice.  </p>
 
-									<li class="list-item">
-										<i class="fas fa-genderless"></i>
-										<p>Fringilla risus nec, luctus mauris orci auctor purus euismod at pretium purus
-											pretium ligula rutrum tempor sapien
-										</p>
-									</li>
-
-									<li class="list-item">
-										<i class="fas fa-genderless"></i>
-										<p>Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien
-											undo pretium purus
-										</p>
-									</li>
-
-								</ul>
-
-							</div>
+								 <p class="txt-color-05">
+								 </p>
+						</div>
+							
 						</div> <!-- END TEXT BLOCK -->
+						
+						<div class="txt left-column pc-20 mb-40">
 
+						<p class="txt-color-05"> Muslim physicians introduced the system of Unani medicine which originated in Greece and was further 
+						developed in the Middle East. This system was brought to the Kandyan Kingdom and was given royal patronage and was integrated 
+						into the traditional medical system of Sri Lanka.</p>
+
+						<p class="txt-color-05">Nature’s Healing Ceylon, having understood the values of these traditional methods, has further developed 
+						them into a comprehensive, integrated medical intervention. This has been achieved through the practice of Nutritive Medicine, 
+						Clinical Hypnotherapy, Emotional Freedom Therapy, Deep Cure Therapy, along with Advanced Structural Corrections. These evidence-based
+						drugless therapies have been found to enhance the positive effects of traditional practices and impact in a complementary manner as an
+						alternative to mainstream medicine. </p>
+
+						<p class="txt-color-05">Nature’s Healing Ceylon combines ancient wisdom with modern scientific methods, to achieve optimum results.
+						 All treatments are evidence based. We have designed a system of uninformed treatment that will assist individuals to understand 
+						 their own bodies and minds, and thereby take responsibility for their own health rather than sub-contracting it to various individuals. </p>
+
+						</div>
 
 					</div> <!-- End row -->
 				</div> <!-- End container -->
 			</section> <!-- END ABOUT-1 -->
-
-
-
-
-			<!-- SERVICES-1
-				============================================= -->
-			<section id="services-1" class="bg-color-02 wide-60 services-section division">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->
-					<div class="row">
-						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">
-
-								<!-- Transparent Header -->
-								<h2 class="tra-header txt-color-02">Be Natural</h2>
-
-								<!-- Title 	-->
-								<h3 class="h3-xl txt-color-01">Feel Natural, Be Natural</h3>
-
-								<!-- Text -->
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque
-									undo dolor
-									primis libero tempus, blandit a cursus varius at magna tempor
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-
-					<!-- SERVICES-1 WRAPPER -->
-					<div class="sbox-1-wrapper">
-						<div class="row">
-
-
-							<!-- SERVICE BOX #1 -->
-							<div class="col-md-4">
-								<div class="sbox-1">
-
-									<!-- Image -->
-									<img class="img-fluid" src="images/serv-01.png" alt="service-image" />
-
-									<!-- Title -->
-									<h5 class="h5-md txt-color-01">Aromatherapy</h5>
-
-									<!-- Text -->
-									<p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula
-										risus auctor tempus
-										dolor feugiat lacinia ultrice in ligula
-									</p>
-
-								</div>
-							</div>
-
-
-							<!-- SERVICE BOX #2 -->
-							<div class="col-md-4">
-								<div class="sbox-1">
-
-									<!-- Image -->
-									<img class="img-fluid" src="images/serv-02.png" alt="service-image" />
-
-									<!-- Title -->
-									<h5 class="h5-md txt-color-01">Relax</h5>
-
-									<!-- Text -->
-									<p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula
-										risus auctor tempus dolor
-										feugiat lacinia ultrice in ligula
-									</p>
-
-								</div>
-							</div>
-
-
-							<!-- SERVICE BOX #3 -->
-							<div class="col-md-4">
-								<div class="sbox-1">
-
-									<!-- Image -->
-									<img class="img-fluid" src="images/serv-03.png" alt="service-image" />
-
-									<!-- Title -->
-									<h5 class="h5-md txt-color-01">Massage</h5>
-
-									<!-- Text -->
-									<p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula
-										risus auctor tempus dolor
-										feugiat lacinia ultrice in ligula
-									</p>
-
-								</div>
-							</div>
-
-
-						</div> <!-- End row -->
-					</div> <!-- END SERVICES-1 WRAPPER -->
-
-
-				</div> <!-- End container -->
-			</section> <!-- END SERVICES-1 -->
-
-
-
-
-			<!-- ABOUT-3
-				============================================= -->
-			<section id="about-3" class="bg-color-01 wide-60 about-section division">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->
-					<div class="row">
-						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">
-
-								<!-- Transparent Header -->
-								<h2 class="tra-header txt-color-02">Experience</h2>
-
-								<!-- Title 	-->
-								<h3 class="h3-xl txt-color-01">Body And Soul Together</h3>
-
-								<!-- Text -->
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque
-									undo dolor
-									primis libero tempus, blandit a cursus varius at magna tempor
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-
-					<!-- ABOUT IMAGE -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="img-block">
-								<img class="img-fluid" src="images/image-12.jpg" alt="about-image">
-							</div>
-						</div>
-					</div>
-
-
-					<!-- ABOUT BOXES WRAPPER -->
-					<div class="abox-1-wrapper">
-						<div class="row d-flex align-items-center">
-
-
-							<!-- ABOUT BOX #1 -->
-							<div class="col-md-4">
-								<div class="abox-1 mb-40">
-
-									<!-- Icon -->
-									<div class="abox-1-ico ico-75 txt-color-03">
-										<span class="flaticon-relax-stones"></span>
-									</div>
-
-									<!-- Text -->
-									<div class="abox-1-txt">
-										<h5 class="h5-xs txt-color-01">Safety Standards</h5>
-										<p class="txt-color-05">Congue augue egestas magna volutpat dictum suscipit
-											ipsum egestas magna vitae purus</p>
-									</div>
-
-								</div>
-							</div>
-
-
-							<!-- ABOUT BOX #2 -->
-							<div class="col-md-4">
-								<div class="abox-1 mb-40">
-
-									<!-- Icon -->
-									<div class="abox-1-ico ico-75 txt-color-03">
-										<span class="flaticon-herbal-2"></span>
-									</div>
-
-									<!-- Text -->
-									<div class="abox-1-txt">
-										<h5 class="h5-xs txt-color-01">Lifestyle Program</h5>
-										<p class="txt-color-05">Congue augue egestas magna volutpat dictum suscipit
-											ipsum egestas magna vitae purus</p>
-									</div>
-
-								</div>
-							</div>
-
-
-							<!-- ABOUT BOX #3 -->
-							<div class="col-md-4">
-								<div class="abox-1 mb-40">
-
-									<!-- Icon -->
-									<div class="abox-1-ico ico-75 txt-color-03">
-										<span class="flaticon-gift"></span>
-									</div>
-
-									<!-- Text -->
-									<div class="abox-1-txt">
-										<h5 class="h5-xs txt-color-01">Gift Cards</h5>
-										<p class="txt-color-05">Congue augue egestas magna volutpat dictum suscipit
-											ipsum egestas magna vitae purus</p>
-									</div>
-
-								</div>
-							</div>
-
-
-						</div> <!-- End row -->
-					</div> <!-- END ABOUT BOXES WRAPPER -->
-
-
-				</div> <!-- End container -->
-			</section> <!-- END ABOUT-3 -->
-
-
-
 
 			<!-- VIDEO-1
 				============================================= -->
@@ -588,799 +381,17 @@
 
 
 
-			<!-- SERVICES-10
-				============================================= -->
-			<section id="services-10" class="bg-color-01 wide-60 services-section division">
-				<div class="container">
+			
 
 
-					<!-- SECTION TITLE -->
-					<div class="row">
-						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">
 
-								<!-- Transparent Header -->
-								<h2 class="tra-header txt-color-02">Welcome To</h2>
 
-								<!-- Title 	-->
-								<h3 class="h3-xl txt-color-01">Massage Therapy Center</h3>
+		
 
-								<!-- Text -->
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque
-									undo dolor
-									primis libero tempus, blandit a cursus varius at magna tempor
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-
-					<!-- SERVICES-10 WRAPPER -->
-					<div class="sbox-10-wrapper">
-						<div class="row">
-
-
-							<!-- SERVICE BOX #1 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="sbox-10 bg-white text-center">
-
-									<!-- Image -->
-									<div class="sbox-10-img">
-										<div class="hover-overlay">
-											<img class="img-fluid" src="images/serv-13.jpg" alt="service-image" />
-										</div>
-									</div>
-
-									<!-- Text -->
-									<div class="sbox-10-txt">
-
-										<!-- Title -->
-										<h5 class="h5-sm txt-color-01">Combination Massage</h5>
-
-										<!-- Text -->
-										<p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum
-											neque dolor</p>
-
-										<!-- Button -->
-										<a href="services.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out
-											More</a>
-
-									</div>
-
-								</div>
-							</div>
-
-
-							<!-- SERVICE BOX #2 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="sbox-10 bg-white text-center">
-
-									<!-- Image -->
-									<div class="sbox-10-img">
-										<div class="hover-overlay">
-											<img class="img-fluid" src="images/serv-14.jpg" alt="service-image" />
-										</div>
-									</div>
-
-									<!-- Text -->
-									<div class="sbox-10-txt">
-
-
-										<!-- Title -->
-										<h5 class="h5-sm txt-color-01">Special Care Solutions</h5>
-
-										<!-- Text -->
-										<p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum
-											neque dolor</p>
-
-										<!-- Button -->
-										<a href="services.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out
-											More</a>
-
-									</div>
-
-								</div>
-							</div>
-
-
-							<!-- SERVICE BOX #3 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="sbox-10 bg-white text-center">
-
-									<!-- Image -->
-									<div class="sbox-10-img">
-										<div class="hover-overlay">
-											<img class="img-fluid" src="images/serv-15.jpg" alt="service-image" />
-										</div>
-									</div>
-
-									<!-- Text -->
-									<div class="sbox-10-txt">
-
-										<!-- Title -->
-										<h5 class="h5-sm txt-color-01">Relaxing & Body Treatments</h5>
-
-										<!-- Text -->
-										<p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum
-											neque dolor</p>
-
-										<!-- Button -->
-										<a href="services.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out
-											More</a>
-
-									</div>
-
-								</div>
-							</div>
-
-
-							<!-- SERVICE BOX #4 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="sbox-10 bg-white text-center">
-
-									<!-- Image -->
-									<div class="sbox-10-img">
-										<div class="hover-overlay">
-											<img class="img-fluid" src="images/serv-16.jpg" alt="service-image" />
-										</div>
-									</div>
-
-									<!-- Text -->
-									<div class="sbox-10-txt">
-
-										<!-- Title -->
-										<h5 class="h5-sm txt-color-01">Oils & Aromatherapy</h5>
-
-										<!-- Text -->
-										<p class="txt-color-05">Aliquam an augue suscipit luctus neque purus magna ipsum
-											neque dolor</p>
-
-										<!-- Button -->
-										<a href="services.html" class="btn p-sm btn-tra-01 color-02-hover">Find Out
-											More</a>
-
-									</div>
-
-								</div>
-							</div>
-
-
-						</div> <!-- End row -->
-					</div> <!-- END SERVICES-10 WRAPPER -->
-
-
-				</div> <!-- End container -->
-			</section> <!-- END SERVICES-10 -->
-
-
-
-
-			<!-- PRICING-2
-				============================================= -->
-			<section id="pricing-2" class="bg-color-01 pricing-section division">
-				<div class="container">
-
-
-					<!-- PRICING TABLES WRAPPER -->
-					<div class="pricing-wrapper">
-						<div class="row d-flex align-items-center">
-
-
-							<!-- WORKING HOURS -->
-							<div class="col-md-6 col-lg-4">
-								<div class="pricing-2-banner bg-color-09 white-color">
-
-									<!-- Title -->
-									<h5 class="h5-xl">Open Hours:</h5>
-
-									<!-- Text -->
-									<p>An magnis nulla dolor sapien augue porta iaculis a purus tempor magna and vitae
-										purus primis ipsum</p>
-
-									<h6 class="h6-xl">Monday – Saturday</h6>
-									<span>8:30 AM - 7:30 PM</span>
-
-									<!-- <h6 class="h6-xl">Saturday</h6>
-									<span>10:00 AM - 6:00 PM</span> -->
-
-									<h6 class="h6-xl">Sunday</h6>
-									<span>Open</span>
-
-									<!-- Button -->
-									<a href="contacts.html" class="btn btn-md btn-tra-white white-hover mt-5">Book
-										Now</a>
-
-								</div>
-							</div>
-
-
-							<!-- IMAGE BLOCK -->
-							<div id="pb-img" class="col-lg-4">
-								<div class="pricing-2-img text-center">
-									<img class="img-fluid" src="images/image-05.jpg" alt="pricing-image" />
-								</div>
-							</div>
-
-
-							<!-- SERVICE BOX #3 -->
-							<div class="col-md-6 col-lg-4">
-								<div class="pricing-2-table bg-color-02">
-									<ul class="pricing-list">
-
-										<li class="pricing-list-txt">
-											<h6 class="h6-lg txt-color-01">Swedish Massage</h6>
-											<p class="txt-color-05">50 Minute Session Packages</p>
-											<h6 class="h6-lg pricing-list-amount txt-color-01">$60</h6>
-										</li>
-
-										<li class="pricing-list-txt">
-											<h6 class="h6-lg txt-color-01">Combination Massage</h6>
-											<p class="txt-color-05">60 Minute Session Packages</p>
-											<h6 class="h6-lg pricing-list-amount txt-color-01">$65</h6>
-										</li>
-
-										<li class="pricing-list-txt">
-											<h6 class="h6-lgs txt-color-01">Deep Tissue Massage</h6>
-											<p class="txt-color-05">45 Minute Session Packages</p>
-											<h6 class="h6-lg pricing-list-amount txt-color-01">$65</h6>
-										</li>
-
-										<li class="pricing-list-txt">
-											<h6 class="h6-lg txt-color-01">Hot Stone Massage</h6>
-											<p class="txt-color-05">55 Minute Session Packages</p>
-											<h6 class="h6-lg pricing-list-amount txt-color-01">$84</h6>
-										</li>
-
-										<li class="pricing-list-txt resp-lst">
-											<h6 class="h6-lg txt-color-01">Relaxing Massage</h6>
-											<p class="txt-color-05">60 Minute Session Packages</p>
-											<h6 class="h6-lg pricing-list-amount txt-color-01">$55</h6>
-										</li>
-
-									</ul>
-								</div>
-							</div>
-
-
-						</div> <!-- End row -->
-					</div> <!-- END PRICING TABLES WRAPPER -->
-
-
-				</div> <!-- End container -->
-			</section> <!-- END PRICING-2 -->
-
-
-
-
-			<!-- TEAM-1
-				============================================= -->
-			<section id="team-1" class="bg-color-01 wide-60 team-section division">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->
-					<div class="row">
-						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">
-
-								<!-- Transparent Header -->
-								<h2 class="tra-header txt-color-02">Our Team</h2>
-
-								<!-- Title 	-->
-								<h3 class="h3-xl txt-color-01">Relax, You're In Good Hands</h3>
-
-								<!-- Text -->
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque
-									undo dolor
-									primis libero tempus, blandit a cursus varius at magna tempor
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-
-					<!-- TEAM MEMBERS WRAPPER -->
-					<div class="tm-wrapper">
-						<div class="row">
-
-
-							<!-- TEAM MEMBER #1 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="team-member">
-
-									<!-- Team Member Photo -->
-									<div class="team-member-photo">
-										<div class="hover-overlay">
-
-											<img class="img-fluid" src="images/team-1.jpg" alt="team-member-foto">
-
-											<!-- Social Icons -->
-											<div class="tm-social clearfix">
-												<ul class="text-center clearfix">
-													<li><a href="#" class="ico-facebook"><i
-																class="fab fa-facebook-f"></i></a></li>
-													<li><a href="#" class="ico-twitter"><i
-																class="fab fa-twitter"></i></a></li>
-													<li><a href="#" class="ico-linkedin"><i
-																class="fab fa-linkedin-in"></i></a></li>
-												</ul>
-											</div>
-
-										</div>
-									</div>
-
-									<!-- Team Member Meta -->
-									<div class="tm-meta">
-										<h6 class="h6-lg txt-color-01">Stacey Richardson</h6>
-										<span class="txt-color-06">Beauty Expert</span>
-									</div>
-
-								</div>
-							</div>
-
-
-							<!-- TEAM MEMBER #2 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="team-member">
-
-									<!-- Team Member Photo -->
-									<div class="team-member-photo">
-										<div class="hover-overlay">
-
-											<img class="img-fluid" src="images/team-2.jpg" alt="team-member-foto">
-
-											<!-- Social Icons -->
-											<div class="tm-social clearfix">
-												<ul class="text-center clearfix">
-													<li><a href="#" class="ico-facebook"><i
-																class="fab fa-facebook-f"></i></a></li>
-													<li><a href="#" class="ico-twitter"><i
-																class="fab fa-twitter"></i></a></li>
-													<li><a href="#" class="ico-instagram"><i
-																class="fab fa-instagram"></i></a></li>
-												</ul>
-											</div>
-
-										</div>
-									</div>
-
-									<!-- Team Member Meta -->
-									<div class="tm-meta">
-										<h6 class="h6-lg txt-color-01">Jennifer Harper</h6>
-										<span class="txt-color-06">SPA Master</span>
-									</div>
-
-								</div>
-							</div>
-
-
-							<!-- TEAM MEMBER #3 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="team-member">
-
-									<!-- Team Member Photo -->
-									<div class="team-member-photo">
-										<div class="hover-overlay">
-
-											<img class="img-fluid" src="images/team-3.jpg" alt="team-member-foto">
-
-											<!-- Social Icons -->
-											<div class="tm-social clearfix">
-												<ul class="text-center clearfix">
-													<li><a href="#" class="ico-facebook"><i
-																class="fab fa-facebook-f"></i></a></li>
-													<li><a href="#" class="ico-twitter"><i
-																class="fab fa-twitter"></i></a></li>
-													<li><a href="#" class="ico-linkedin"><i
-																class="fab fa-linkedin-in"></i></a></li>
-												</ul>
-											</div>
-
-										</div>
-									</div>
-
-									<!-- Team Member Meta -->
-									<div class="tm-meta">
-										<h6 class="h6-lg txt-color-01">Rodney Stratton</h6>
-										<span class="txt-color-06">Beautician</span>
-									</div>
-
-								</div>
-							</div>
-
-
-							<!-- TEAM MEMBER #4 -->
-							<div class="col-md-6 col-lg-3">
-								<div class="team-member">
-
-									<!-- Team Member Photo -->
-									<div class="team-member-photo">
-										<div class="hover-overlay">
-
-											<img class="img-fluid" src="images/team-4.jpg" alt="team-member-foto">
-
-											<!-- Social Icons -->
-											<div class="tm-social clearfix">
-												<ul class="text-center clearfix">
-													<li><a href="#" class="ico-facebook"><i
-																class="fab fa-facebook-f"></i></a></li>
-													<li><a href="#" class="ico-twitter"><i
-																class="fab fa-twitter"></i></a></li>
-													<li><a href="#" class="ico-instagram"><i
-																class="fab fa-instagram"></i></a></li>
-												</ul>
-											</div>
-
-										</div>
-									</div>
-
-									<!-- Team Member Meta -->
-									<div class="tm-meta">
-										<h6 class="h6-lg txt-color-01">Jane Smith</h6>
-										<span class="txt-color-06">Beauty Therapist</span>
-									</div>
-
-								</div>
-							</div>
-
-
-						</div> <!-- End row -->
-					</div> <!-- END TEAM MEMBERS WRAPPER -->
-
-
-				</div> <!-- End container -->
-			</section> <!-- END TEAM-1 -->
-
-
-
-
-			<!-- BANNER-5
-				============================================= -->
-			<section id="banner-5" class="bg-fixed bg-image banner-section division">
-				<div class="container">
-					<div class="row d-flex align-items-center">
-
-
-						<!-- TEXT BLOCK -->
-						<div class="col-lg-6 offset-lg-3">
-							<div class="banner-5-txt text-center">
-
-								<!-- Title -->
-								<h2 class="h2-xl txt-color-05">Get 20% Off</h2>
-								<h3 class="h3-xs txt-color-01">For Your First Visit</h3>
-
-								<!-- Text -->
-								<p class="p-md txt-color-05">Porta semper lacus cursus, feugiat primis ultrice ligula
-									risus auctor an tempus
-									feugiat dolor undo lacinia cubilia curae
-								</p>
-
-								<!-- Button -->
-								<a href="contacts.html" class="btn btn-md btn-color-02 color-01-hover">Book Now</a>
-
-							</div>
-						</div> <!-- END TEXT BLOCK -->
-
-					</div> <!-- End row -->
-				</div> <!-- End container -->
-			</section> <!-- END BANNER-5 -->
-
-
-
-
-			<!-- TESTIMONIALS-1
-				============================================= -->
-			<section id="reviews-1" class="bg-color-01 wide-100 reviews-section division">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->
-					<div class="row">
-						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">
-
-								<!-- Transparent Header -->
-								<h2 class="tra-header txt-color-02">Testimonials</h2>
-
-								<!-- Title 	-->
-								<h3 class="h3-xl txt-color-01">What Our Clients Say</h3>
-
-								<!-- Text -->
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque
-									undo dolor
-									primis libero tempus, blandit a cursus varius at magna tempor
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-
-					<!-- TESTIMONIALS CONTENT -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="owl-carousel owl-theme reviews-wrapper">
-
-
-								<!-- TESTIMONIAL #1 -->
-								<div class="review-1">
-
-									<!-- Testimonial Author Avatar -->
-									<div class="testimonial-avatar">
-										<img src="images/review-author-1.jpg" alt="testimonial-avatar">
-									</div>
-
-									<!-- Testimonial Author -->
-									<div class="author-data txt-color-01">
-										<h6 class="h6-sm">Kelly Walke</h6>
-										<p>Housewife</p>
-									</div>
-
-									<!-- Testimonial Text -->
-									<div class="review-1-txt txt-color-05">
-										<p>Sagittis congue etiam sapien sem accumsan suscipit egestas lobortis magna,
-											porttitor
-											sodales vitae aenean mauris tempor risus lectus
-										</p>
-									</div>
-
-								</div>
-
-
-								<!-- TESTIMONIAL #2 -->
-								<div class="review-1">
-
-									<!-- Testimonial Author Avatar -->
-									<div class="testimonial-avatar">
-										<img src="images/review-author-2.jpg" alt="testimonial-avatar">
-									</div>
-
-									<!-- Testimonial Author -->
-									<div class="author-data txt-color-01">
-										<h6 class="h6-sm">Linda Ferell</h6>
-										<p>Designer</p>
-									</div>
-
-									<!-- Testimonial Text -->
-									<div class="review-1-txt txt-color-05">
-										<p>Sapien sem accumsan vitae purus diam integer congue magna undo. Magna,
-											sodales vitae
-											aenean mauris tempor risus lectus aenean magna ipsum vitae purus vitae
-										</p>
-									</div>
-
-								</div>
-
-
-								<!-- TESTIMONIAL #3 -->
-								<div class="review-1">
-
-									<!-- Testimonial Author Avatar -->
-									<div class="testimonial-avatar">
-										<img src="images/review-author-3.jpg" alt="testimonial-avatar">
-									</div>
-
-									<!-- Testimonial Author -->
-									<div class="author-data txt-color-01">
-										<h6 class="h6-sm">Evelyn Martinez</h6>
-										<p>Journalist</p>
-									</div>
-
-									<!-- Testimonial Text -->
-									<div class="review-1-txt txt-color-05">
-										<p>Etiam sapien sem accumsan sagittis congue. Suscipit egestas at lobortis
-											magna, porttitor
-											sodales vitae aenean mauris tempor risus lectus aenean diam aenean mauris
-										</p>
-									</div>
-
-								</div>
-
-
-								<!-- TESTIMONIAL #4 -->
-								<div class="review-1">
-
-									<!-- Testimonial Author Avatar -->
-									<div class="testimonial-avatar">
-										<img src="images/review-author-4.jpg" alt="testimonial-avatar">
-									</div>
-
-									<!-- Testimonial Author -->
-									<div class="author-data txt-color-01">
-										<h6 class="h6-sm">Laura Merino</h6>
-										<p>Fashion Designer</p>
-									</div>
-
-									<!-- Testimonial Text -->
-									<div class="review-1-txt txt-color-05">
-										<p>Egestas egestas magna ipsum vitae purus efficitur ipsum primis in cubilia
-											laoreet augue
-											congue. An egestas lobortis magna, sodales vitae
-										</p>
-									</div>
-
-								</div>
-
-
-								<!-- TESTIMONIAL #5 -->
-								<div class="review-1">
-
-									<!-- Testimonial Author Avatar -->
-									<div class="testimonial-avatar">
-										<img src="images/review-author-5.jpg" alt="testimonial-avatar">
-									</div>
-
-									<!-- Testimonial Author -->
-									<div class="author-data txt-color-01">
-										<h6 class="h6-sm">Elizabeth Ross</h6>
-										<p>Biologist</p>
-									</div>
-
-									<!-- Testimonial Text -->
-									<div class="review-1-txt txt-color-05">
-										<p>An orci nullam tempor sapien, eget orci gravida donec enim ipsum porta justo
-											integer and
-											odio velna auctor. Egestas magna ipsum vitae purus ipsum primis in laoreet
-											augue
-										</p>
-									</div>
-
-								</div>
-
-
-								<!-- TESTIMONIAL #6 -->
-								<div class="review-1">
-
-									<!-- Testimonial Author Avatar -->
-									<div class="testimonial-avatar">
-										<img src="images/review-author-6.jpg" alt="testimonial-avatar">
-									</div>
-
-									<!-- Testimonial Author -->
-									<div class="author-data txt-color-01">
-										<h6 class="h6-sm">Carmen M. Garcia</h6>
-										<p>Graphic Designer</p>
-									</div>
-
-									<!-- Testimonial Text -->
-									<div class="review-1-txt txt-color-05">
-										<p>Mauris donec ociis et magnis sapien an etiam sapien sem sagittis congue
-											augue. An orci nullam
-											tempor sapien, eget orci gravida donec porta
-										</p>
-									</div>
-
-								</div>
-
-
-								<!-- TESTIMONIAL #7 -->
-								<div class="review-1">
-
-									<!-- Testimonial Author Avatar -->
-									<div class="testimonial-avatar">
-										<img src="images/review-author-7.jpg" alt="testimonial-avatar">
-									</div>
-
-									<!-- Testimonial Author -->
-									<div class="author-data txt-color-01">
-										<h6 class="h6-sm">Penelopa M.</h6>
-										<p>Manager</p>
-									</div>
-
-									<!-- Testimonial Text -->
-									<div class="review-1-txt txt-color-05">
-										<p>At sagittis congue augue egestas egestas magna ipsum vitae purus ipsum primis
-											in cubilia
-											laoreet augue diam ociis nullam tempor
-										</p>
-									</div>
-
-								</div>
-
-
-							</div>
-						</div>
-					</div> <!-- END TESTIMONIALS CONTENT -->
-
-
-				</div> <!-- End container -->
-			</section> <!-- END TESTIMONIALS-1 -->
-
-
-
-
-			<!-- CONTACTS-1
-				============================================= -->
-			<section id="contacts-1" class="bg-color-02 wide-60 contacts-section division">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->
-					<div class="row">
-						<div class="col-lg-10 offset-lg-1">
-							<div class="section-title mb-60 text-center">
-
-								<!-- Transparent Header -->
-								<h2 class="tra-header txt-color-02">Contact Us</h2>
-
-								<!-- Title 	-->
-								<h3 class="h3-xl txt-color-01">Have Any Questions?</h3>
-
-								<!-- Text -->
-								<p class="p-lg txt-color-05">Aliquam a augue suscipit, luctus neque purus ipsum neque
-									undo dolor
-									primis libero tempus, blandit a cursus varius at magna tempor
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-
-					<div class="row">
-
-
-						<!-- CONTACT FORM -->
-						<div class="col-md-7 col-lg-8">
-							<div class="google-map mb-40">
-
-								<!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-								<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9722953864675!2d79.86370361550708!3d6.893917220657058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd7288663d1%3A0x23f23930f8c27b9d!2s50%20Kassapa%20Rd%2C%20Colombo%2000500!5e0!3m2!1sen!2slk!4v1613125603985!5m2!1sen!2slk"
-									width="600" height="450"></iframe>
-
-							</div>
-						</div> <!-- END CONTACT FORM -->
-
-
-						<!-- CONTACTS INFO -->
-						<div class="col-md-5 col-lg-4">
-							<div class="contacts-info pc-25 mt-35 mb-40">
-
-								<!-- LOCATION -->
-								<div class="cbox-1 mb-30">
-									<h5 class="h5-sm txt-color-01">Our Location</h5>
-									<p class="p-md txt-color-05">No:50, Kassapa Rd,</p>
-									<p class="p-md txt-color-05">Colombo 05,Sri Lanka</p>
-								</div>
-
-								<!-- PHONES -->
-								<div class="cbox-1 mb-30">
-									<h5 class="h5-sm txt-color-01">Contact Info</h5>
-									<p class="p-md txt-color-05"><span>Phone :</span> +94 77 072 8767</p>
-									<p class="p-md txt-color-05"><span>Email :</span> <a
-											href="mailto:natureshealing.ceylon@gmail.com">natureshealing.ceylon@gmail.com</a></p>
-									<!-- <p class="p-md txt-color-05"><span>Skype :</span> <a
-											href="tel:077 072 8767">support.spamagic</a></p> -->
-								</div>
-
-								<!-- EMAILS -->
-								<div class="cbox-1">
-									<h5 class="h5-sm txt-color-01">Working Hours</h5>
-									<p class="p-md txt-color-05"><span>Mon – Saturday :</span> 8:30 AM - 7:30 PM</p>
-									<!-- <p class="p-md txt-color-05"><span>Saturday :</span> 8:30 AM - 12:30 PM</p> -->
-									<p class="p-md txt-color-05"><span>Sunday :</span> Open</p>
-								</div>
-
-							</div>
-						</div> <!-- END CONTACTS INFO -->
-
-
-					</div> <!-- End row -->
-
-
-				</div> <!-- End container -->
-			</section> <!-- END CONTACTS-1 -->
-
-
-
-
-
-			<!-- FOOTER-1
-				============================================= -->
-			<footer id="footer-1" class="bg-color-01 footer division">
+			
+			<!-- FOOTER-4
+			============================================= -->
+			<footer id="footer-4" class="bg-color-01 footer division">
 				<div class="container">
 
 
@@ -1389,26 +400,42 @@
 
 
 						<!-- FOOTER INFO -->
-						<div class="col-md-6 col-lg-4 col-xl-5">
+						<div class="col-md-5 col-lg-4">
 							<div class="footer-info mb-40">
 
 								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be 
-									displayed (e.g 408 x 120  pixels) -->
+								displayed (e.g 408 x 120  pixels) -->
 								<img src="images/Logo/NH-web-logo-gold.png" width="204" height="60" alt="footer-logo">
 
-								<!-- Footer Contacts -->
-								<div class="footer-contacts txt-color-05 mt-25">
+								<!-- Text -->	
+								<p class="txt-color-05 mt-20">Aliquam nullam tempor sapien at gravida donec congue ipsum a porta magna and 
+								   justo velna auctor sapien and augue 
+								</p>
 
-									<!-- Address -->
-									<p>No:50, Kassapa Rd,</p>
-									<p>Colombo 05,Sri Lanka</p>
+							</div>	
+						</div>	
+
+
+						<!-- FOOTER CONTACTS -->
+						<div class="col-md-4 col-lg-3 col-xl-3">
+							<div class="footer-contacts mb-40">
+							
+								<!-- Title -->
+								<h6 class="h6-lg txt-color-01">Let's Talk</h6>
+
+								<!-- Address -->
+								<p class="txt-color-05">No:50, Kassapa Road</p> 
+								<p class="txt-color-05">Colombo 05, Sri Lanka</p>
+
+								<!-- Footer Contacts -->
+								<div class="txt-color-05 mt-15">
 
 									<!-- Email -->
-									<p class="foo-email">E: <a
-											href="mailto:natureshealing@gmail.com">natureshealing@gmail.com</a></p>
+									<p class="foo-email">Email: <a href="natureshealing.ceylon@gmail.com">natureshealing.ceylon@gmail.com</a></p>
 
 									<!-- Phone -->
-									<p>P: +94 77 072 8767</p>
+									<p>Phone: +94 77 072 8767</p>
+									<!-- <p>Skype : <a href="tel:0770728767">support.spamagic</a></p> -->
 
 								</div>
 
@@ -1419,97 +446,46 @@
 						<!-- FOOTER LINKS -->
 						<div class="col-md-3 col-lg-2">
 							<div class="footer-links mb-40">
-
+							
 								<!-- Title -->
-								<h6 class="h6-lg txt-color-01">About Us</h6>
+								<h6 class="h6-lg txt-color-01">Quick Links</h6>
 
 								<!-- Footer Links -->
-								<ul class="clearfix txt-color-05">
-									<li>
-										<p><a href="about.html">About Us</a></p>
-									</li>
-									<li>
-										<p><a href="contacts.html">Contact Us</a></p>
-									</li>
-									<!-- <li>
-										<p><a href="#">Career</a></p>
-									</li>
-									<li>
-										<p><a href="#">Advertising</a></p>
-									</li>
-									<li>
-										<p><a href="#">Reviews</a></p>
-									</li> -->
+								<ul class="txt-color-05 clearfix">
+									<li><p><a href="#">About Us</a></p></li>	
+									<!-- <li><p><a href="#">Advertising</a></p></li>	 -->
+									<li><p><a href="#">FAQs</a></p></li>
+									<li><p><a href="contacts.php">Appointments</a></p></li>
+									<li><p><a href="contacts.php">Contact Us</a></p></li>
+									<!-- <li><p><a href="#">Gift Cards</a></p></li>	 -->
 								</ul>
 
 							</div>
 						</div>
 
 
-						<!-- FOOTER LINKS -->
-						<div class="col-md-3 col-lg-2">
-							<div class="footer-links mb-40">
+						<!-- FOOTER IMAGES -->
+						<div class="col-md-12 col-lg-3">
+							<div class="footer-img mb-40">
 
 								<!-- Title -->
-								<h6 class="h6-lg txt-color-01">Userful Links</h6>
+								<h6 class="h6-lg txt-color-01">Instagram</h6>
 
-								<!-- Footer List -->
-								<ul class="clearfix txt-color-05">
-									<li>
-										<p><a href="#">Location</a></p>
-									</li>
-									<li>
-										<p><a href="#">Help & FAQs</a></p>
-									</li>
-									<li>
-										<p><a href="#">Appointments</a></p>
-									</li>
-									<li>
-										<p><a href="#">Membership</a></p>
-									</li>
-									<li>
-										<p><a href="#">Gift Cards</a></p>
-									</li>
+								<!-- Instagram Images -->
+								<ul class="text-center clearfix">
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-01.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-02.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-03.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-04.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-05.jpg" alt="insta-img"></a></li>
+									<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-06.jpg" alt="insta-img"></a></li>	
 								</ul>
-
+														
 							</div>
-						</div>
+						</div>	<!-- END FOOTER IMAGES -->
 
 
-						<!-- FOOTER NEWSLETTER FORM -->
-						<div class="col-md-8 col-lg-4 col-xl-3">
-							<div class="footer-form mb-20">
-
-								<!-- Title -->
-								<h6 class="h6-lg txt-color-01">Subscribe Us:</h6>
-
-								<!-- Text -->
-								<p class="txt-color-05 mb-20">Stay up to date with our latest news and our new products
-								</p>
-
-								<!-- Newsletter Form Input -->
-								<form class="newsletter-form">
-
-									<div class="input-group">
-										<input type="email" class="form-control" placeholder="Email Address" required
-											id="s-email">
-										<span class="input-group-btn">
-											<button type="submit" class="btn txt-color-06">
-												<i class="far fa-arrow-alt-circle-right"></i>
-											</button>
-										</span>
-									</div>
-
-									<!-- Newsletter Form Notification -->
-									<label for="s-email" class="form-notification"></label>
-
-								</form>
-
-							</div>
-						</div> <!-- END FOOTER NEWSLETTER FORM -->
-
-
-					</div> <!-- END FOOTER CONTENT -->
+					</div>	  <!-- END FOOTER CONTENT -->
 
 
 					<!-- BOTTOM FOOTER -->
@@ -1520,7 +496,7 @@
 							<!-- FOOTER COPYRIGHT -->
 							<div class="col-lg-6">
 								<div class="footer-copyright">
-									<p>&copy; 2021 Nature's Healing. All Rights Reserved</p>
+									<p>&copy; 2021 <strong>Natures Healing Ceylon (Pvt) Ltd.</strong> All Rights Reserved</p>
 								</div>
 							</div>
 
@@ -1528,29 +504,20 @@
 							<!-- BOTTOM FOOTER LINKS -->
 							<div class="col-lg-6">
 								<ul class="bottom-footer-list text-right clearfix">
-									<li>
-										<p class="first-list-link"><a href="#"><i class="fab fa-facebook-f"></i>
-												Facebook</a></p>
-									</li>
-									<!-- <li>
-										<p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p>
-									</li> -->
-									<li>
-										<p class="last-li"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></p>
-									</li>
-									<!-- <li>
-										<p class="last-li"><a href="#"><i class="fab fa-yelp"></i> Yelp</a></p>
-									</li> -->
+									<li><p class="first-list-link"><a href="https://www.facebook.com/natureshealingceylon/"><i class="fab fa-facebook-f"></i> Facebook</a></p></li>	
+									<!-- <li><p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p></li> -->
+									<li><p class="last-li"><a href="https://www.instagram.com/natureshealingceylon/"><i class="fab fa-instagram"></i> Instagram</a></p></li>
+									<!-- <li><p class="last-li"><a href="#"><i class="fab fa-yelp"></i> Yelp</a></p></li> -->
 								</ul>
 							</div>
 
 
-						</div> <!-- End row -->
-					</div> <!-- END BOTTOM FOOTER -->
+						</div>  <!-- End row -->
+					</div>	<!-- END BOTTOM FOOTER -->
 
 
-				</div> <!-- End container -->
-			</footer> <!-- END FOOTER-1 -->
+				</div>	   <!-- End container -->										
+			</footer>	<!-- END FOOTER-4 -->
 
 
 
