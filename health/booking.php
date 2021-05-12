@@ -1,5 +1,5 @@
 <?php
-include 'database/connection.php';
+include '../database/connection.php';
 ?>
 <!-- Insert Data to database -->
 <?php
@@ -18,11 +18,17 @@ if (isset($_POST['book'])) {
 	$sql = "INSERT INTO appointment(name, email, phone, date, age, gender, treatment, patient) VALUES('$name', '$email', '$phone', '$date', '$age', '$gender', '$treatment', '$patient')";
 
 	if (mysqli_query($conn, $sql)) {
+		$_SESSION['status'] = "Your booking has been confirmed";
+		$_SESSION['status_code'] = "success";
 		// $_SESSION['message1'] = "<h1>Awesome!</h1>"; 
 		// $_SESSION['message2'] = "<h3>Your booking has been confirmed.</h3>";
-		$_SESSION['message'] = "Your Booking Has Been Confirmed...";
+		// $_SESSION['message'] = "Your Booking Has Been Confirmed...";
+
+
 	} else {
 		echo mysqli_error($conn);
+		$_SESSION['status'] = "Your booking has not confirmed";
+		$_SESSION['status_code'] = "error";
 	}
 }
 
@@ -95,7 +101,6 @@ if (isset($_POST['book'])) {
 	<!-- RESPONSIVE CSS -->
 	<link href="css/responsive.css" rel="stylesheet">
 
-
 	<!---->
 	<!-- <link href="./css/jquery.datetimepicker.min.css" rel="stylesheet">
 		<script src="./js/jquery.datetimepicker.full.js"></script> -->
@@ -104,7 +109,7 @@ if (isset($_POST['book'])) {
 
 	</script>
 
-	<style>
+	<!-- <style>
 		.msg {
 			margin: 30px auto;
 			padding: 10px;
@@ -115,7 +120,7 @@ if (isset($_POST['book'])) {
 			width: 50%;
 			text-align: center;
 		}
-	</style>
+	</style> -->
 
 </head>
 
@@ -470,17 +475,13 @@ if (isset($_POST['book'])) {
 									<div class="col-md-12 mt-5 text-right">
 										<input type="submit" class="btn btn-md btn-color-02 color-01-hover submit" value="Book Now" name="book">
 									</div>
+
+									<!--POP-UP MESSAGE-->
+									
+
 									<!-- Display booking success message -->
-									<?php if (isset($_SESSION['message'])) : ?>
-										<div class="msg">
-										<?php
-											echo $_SESSION['message'];
-											unset($_SESSION['message']);
-										?>
-									</div>
-									<?php endif ?>
-									<div id="error_message" class="ajax_response" style="float:left"></div>
-									<div id="success_message" class="ajax_response" style="float:left"></div>
+									<!-- <div id="error_message" class="ajax_response" style="float:left"></div>
+									<div id="success_message" class="ajax_response" style="float:left"></div> -->
 
 								</form>
 							</div>
@@ -518,17 +519,7 @@ if (isset($_POST['book'])) {
 						</div> <!-- END CONTACTS INFO -->
 
 						<!-- Display booking success message -->
-						<?php if (isset($_SESSION['message'])) : ?>
-										<div class="msg">
-									<?php
-										echo $_SESSION['message'];
-										unset($_SESSION['message']);
-									?>
-
-									<?php endif ?>
-
-
-					</div> <!-- End row -->
+						<!-- End row -->
 
 
 				</div> <!-- End container -->
@@ -809,3 +800,7 @@ if (isset($_POST['book'])) {
 </body>
 
 </html>
+
+<?php
+include('includes/scripts.php');
+?>
