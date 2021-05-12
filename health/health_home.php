@@ -995,7 +995,7 @@
 
 									<!-- Post Title -->
 									<h5 class="h5-sm txt-color-01">
-										<a href="single-post.html">Retirement and Your Health</a>
+										<a href="#">Retirement and Your Health</a>
 									</h5>
 
 									<!-- Post Text -->
@@ -1029,7 +1029,7 @@
 
 									<!-- Post Title -->
 									<h5 class="h5-sm txt-color-01">
-										<a href="single-post.html">Tempor blandit sapien at gravida donec ipsum</a>
+										<a href="#">Tempor blandit sapien at gravida donec ipsum</a>
 									</h5>
 
 									<!-- Post Text -->
@@ -1062,7 +1062,7 @@
 									<span class="txt-color-06">Aromatherapy</span>
 
 									<!-- Post Title -->
-									<h5 class="h5-sm txt-color-01"><a href="single-post.html">Neque dolor primis a libero tempus an impedit 
+									<h5 class="h5-sm txt-color-01"><a href="#">Neque dolor primis a libero tempus an impedit 
 									   tempor</a>
 									</h5>
 

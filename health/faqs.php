@@ -508,7 +508,7 @@
 
 									<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be 
 									displayed (e.g 408 x 120  pixels) -->
-									<img src="images/logo-01.png" width="204" height="60" alt="footer-logo">
+									<img src="images/Logo/NH-web-logo-gold.png" width="204" height="60" alt="footer-logo">
 
 									<!-- Text -->	
 									<p class="txt-color-05 mt-20">Aliquam nullam tempor sapien at gravida donec congue ipsum a porta magna and 
@@ -559,10 +559,10 @@
 											<p><a href="#">About Us</a></p>
 										</li>
 										<li>
-											<p><a href="faqs.html">FAQs</a></p>
+											<p><a href="faqs.php">FAQs</a></p>
 										</li>
 										<li>
-											<p><a href="contacts.html">Appointments</a></p>
+											<p><a href="booking.php">Appointments</a></p>
 										</li>
 										<li>
 											<p><a href="contacts.html">Contact Us</a></p>
