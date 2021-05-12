@@ -1,4 +1,4 @@
-<?php include 'health/database/connection.php'?>
+<?php include 'health/database/connection.php' ?>
 
 <!DOCTYPE html>
 
@@ -11,40 +11,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
- 
- <title>ADMIN PANEL</title>
+
+  <title>ADMIN PANEL</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  
+
   <!-- Custom styles for this template-->
-  <link rel="stylesheet" type="text/css" href="css/sb-admin-2.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/sb-admin-2.min.css" />
 
   <style>
-  #booking {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
+    #booking {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
 
-  #booking td, #booking th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
+    #booking td,
+    #booking th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
 
-  #booking tr:nth-child(even){background-color: #f2f2f2;}
+    #booking tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
 
-  #booking tr:hover {background-color: #ddd;}
+    #booking tr:hover {
+      background-color: #ddd;
+    }
 
-  #booking th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #2d4771;
-    color: white;
-  }
-
+    #booking th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #2d4771;
+      color: white;
+    }
   </style>
 
 </head>
@@ -60,7 +64,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="adminPanel.php">
         <div class="sidebar-brand-icon">
-        <img src="images/Logo/NH Logo white colour.png" width="80px" height="80px"></img>
+          <img src="images/Logo/NH Logo white colour.png" width="80px" height="80px"></img>
         </div>
       </a>
 
@@ -133,97 +137,101 @@
         <!-- End of Topbar -->
 
         <!-- Retrieve Booking Details | DOCTOR,ADMIN-->
-        <center><br><h3>Patient Bookings</h3><br>
-									<!-- <table class="table" style = "width: 90%" border="1" > -->
-                  <table id = "booking" style = "width: 90%" border="1" >
-									<thead class="thead-dark">
-									<tr class="bg-primary">
-										<th>ID</th>
-										<th>NAME</th>
-										<th>EMAIL</th>
-										<th>PHONE</th>
-										<th>AGE</th>
-										<th>GENDER</th>
-										<th>TREATMENT</th>
-										<th>PATIENT</th>
-                    <th>DATE</th>
-                    <th>TIME</th>
-										</tr></center></thead>
+        <center><br>
+          <h3>Patient Bookings</h3><br>
+          <!-- <table class="table" style = "width: 90%" border="1" > -->
+          <table id="booking" style="width: 90%" border="1">
+            <thead class="thead-dark">
+              <tr class="bg-primary">
+                <th>ID</th>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>PHONE</th>
+                <th>AGE</th>
+                <th>GENDER</th>
+                <th>TREATMENT</th>
+                <th>PATIENT</th>
+                <th>DATE</th>
+                <th>TIME</th>
+              </tr>
+        </center>
+        </thead>
 
-									<?php  
+        <?php
 
-									$i = 1;
-									$sql = "select * from appointment";
-									$run = $conn -> query($sql);
-									if($run -> num_rows > 0){
-									while($row = $run -> fetch_assoc()){
-									$id = $row['id'];
-									?>
+        $i = 1;
+        $sql = "select * from appointment";
+        $run = $conn->query($sql);
+        if ($run->num_rows > 0) {
+          while ($row = $run->fetch_assoc()) {
+            $id = $row['id'];
+        ?>
 
-									<tr>
-									
-										<td><?php echo $i++ ?></td>
-										<td><?php echo $row['name'] ?></td>
-										<td><?php echo $row['email'] ?></td>
-										<td><?php echo $row['phone'] ?></td>
-										<td><?php echo $row['age'] ?></td>
-										<td><?php echo $row['gender'] ?></td>
-										<td><?php echo $row['treatment'] ?></td>
-										<td><?php echo $row['patient'] ?></td>
-                    <td><?php echo $row['date'] ?></td>
-                    <td><?php echo $row['time'] ?></td>
-										
-									</tr>
-									<?php     
-  									   
-  									?> 
+            <tr>
 
-									<?php  
+              <td><?php echo $i++ ?></td>
+              <td><?php echo $row['name'] ?></td>
+              <td><?php echo $row['email'] ?></td>
+              <td><?php echo $row['phone'] ?></td>
+              <td><?php echo $row['age'] ?></td>
+              <td><?php echo $row['gender'] ?></td>
+              <td><?php echo $row['treatment'] ?></td>
+              <td><?php echo $row['patient'] ?></td>
+              <td><?php echo $row['date'] ?></td>
+              <td><?php echo $row['time'] ?></td>
 
-									}
-								}
+            </tr>
+            <?php
 
-								?>
+            ?>
 
-								</table></center>
+        <?php
 
-    </div>
-    <!-- End of Content Wrapper -->
+          }
+        }
 
-  </div>
-  <!-- End of Page Wrapper -->
+        ?>
 
-  <!-- Scroll to Top Button -->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.php">Logout</a>
-        </div>
+        </table>
+        </center>
 
       </div>
+      <!-- End of Content Wrapper -->
+
     </div>
-  </div>
+    <!-- End of Page Wrapper -->
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Scroll to Top Button -->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.php">Logout</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
 </body>
 

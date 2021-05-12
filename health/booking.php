@@ -21,7 +21,8 @@ if (isset($_POST['book'])) {
 	if (mysqli_query($conn, $sql)) {
 		// $_SESSION['message1'] = "<h1>Awesome!</h1>"; 
 		// $_SESSION['message2'] = "<h3>Your booking has been confirmed.</h3>";
-		$_SESSION['message'] = "Your Booking Has Been Confirmed...";
+		// $_SESSION['message'] = "Your Booking Has Been Confirmed...";
+		// header('Location: bookingSuccess.php?redirect=bookingSuccess.php');
 	} else {
 		echo mysqli_error($conn);
 	}
@@ -472,8 +473,8 @@ if (isset($_POST['book'])) {
 										<input type="submit" class="btn btn-md btn-color-02 color-01-hover submit" value="Book Now" name="book">
 									</div>
 
-									<div id="error_message" class="ajax_response" style="float:left"></div>
-									<div id="success_message" class="ajax_response" style="float:left"></div>
+									<!-- <div id="error_message" class="ajax_response" style="float:left"></div>
+									<div id="success_message" class="ajax_response" style="float:left"></div> -->
 
 								</form>
 							</div>
@@ -510,18 +511,7 @@ if (isset($_POST['book'])) {
 							</div>
 						</div> <!-- END CONTACTS INFO -->
 
-						<!-- Display booking success message -->
-						<?php if (isset($_SESSION['message'])) : ?>
-										<div class="msg">
-									<?php
-										echo $_SESSION['message'];
-										unset($_SESSION['message']);
-									?>
-
-									<?php endif ?>
-
-
-					</div> <!-- End row -->
+					<!-- End row -->
 
 
 				</div> <!-- End container -->
